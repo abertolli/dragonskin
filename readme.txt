@@ -88,4 +88,5 @@ Contact:  Angelo Bertolli <angelo.bertolli@gmail.com>
 == 1.3 ==
   * Added image for nicer looking blockquote
   * Added comment capability back to pages, but don't display "comments disabled" when turned off
+  * Added support for favicon
 
