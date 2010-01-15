@@ -24,6 +24,7 @@ please consider linking to me in  your blogroll.
       ** http://www.gdstarrating.com/2009/01/12/features-overview/
    * Add child themes with different colors, such as gold
    * Threaded comments
+   * Paginate comments (http://codex.wordpress.org/Migrating_Plugins_and_Themes_to_2.7/Enhanced_Comment_Display)
 
 ==== Feedback ====
 Please visit the theme URL to leave feedback including requests
