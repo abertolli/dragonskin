@@ -31,7 +31,7 @@ Please visit the theme URL to leave feedback including requests
 and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Image Credits ====
-   * Whoever made the Propaganda backgrounds for Linux
+   * Bowie J. Poag
    * Brilliant Button Maker (http://www.lucazappa.com/brilliantMaker/buttonImage.php)
    * Arcsin Website Templates - for the border image (http://templates.arcsin.se/the-hobbit-website-template/)
 
