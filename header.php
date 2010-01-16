@@ -25,7 +25,7 @@
 <div id="header">
 <div align="center">
 <?php
-if (is_readable(TEMPLATEPATH."/images/header.gif")) { ?>
+if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 	<a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/header.gif" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
 <?php } else { ?>
 	<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>

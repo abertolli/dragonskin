@@ -16,10 +16,10 @@ Please leave the link to let people know where to get this theme, or provide a l
 
 <br />
 
-<a href="http://wordpress.org/"><img src="<?php echo bloginfo('template_url'); ?>/images/wordpress-80x15.png" alt="Powered by WordPress" border="0" /></a>
-<a href="http://bitfreedom.com/dragonskin/"><img src="<?php echo bloginfo('template_url'); ?>/images/dragonskin-80x15.png" alt="Download the Dragonskin Theme" border="0" /></a>
+<a href="http://wordpress.org/"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/wordpress-80x15.png" alt="Powered by WordPress" border="0" /></a>
+<a href="http://bitfreedom.com/dragonskin/"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/dragonskin-80x15.png" alt="Download the Dragonskin Theme" border="0" /></a>
 <!--
-<a href="http://heroesonly.com/"><img src="<?php echo bloginfo('template_url'); ?>/images/heroesonly-80x15.png" alt="Theme created by Heroes Only" border="0" /></a>
+<a href="http://heroesonly.com/"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/heroesonly-80x15.png" alt="Theme created by Heroes Only" border="0" /></a>
 -->
 </p>
 
