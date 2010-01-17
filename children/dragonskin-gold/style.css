@@ -13,7 +13,7 @@ You must have dragonskin in your themes directory for this to work.
 
 */
 
-/* #ba4, #cb5, #dc3, #dc5 */
+/* #ba4, #cb0, #dc3, #dc5 */
 
 body {
 	background: #000 url('images/dragonskin.jpg');
@@ -306,7 +306,7 @@ blockquote {
 }
 
 hr {
-   color: #cb5;
+   color: #cb0;
    border: 1px solid;
 /*   clear: both; */
 }
@@ -394,7 +394,7 @@ input, option, textarea {
 }
 
 .boxed {
-   border: 2px solid #cb5;
+   border: 2px solid #cb0;
    -moz-border-radius:  10px 10px 10px 10px;
    padding: 1em;
    margin-top: 25px;
@@ -412,7 +412,7 @@ input, option, textarea {
 }
 
 .boxed span {
-   color: #cb5;
+   color: #cb0;
    font-weight: bold;
 }
 
