@@ -21,7 +21,7 @@ body {
 }
 
 a, a:visited {
-	color: #limegreen;
+	color: #0c0;
 	text-decoration: underline;
 }
 	
@@ -58,7 +58,7 @@ a:hover {
 }
 
 #header h2 a {
-	color: forestgreen;
+	color: #0b0;
 	text-decoration: none;
 }
 
@@ -83,8 +83,8 @@ a:hover {
 	text-align: left;
 	padding: 0px;
 	background:  url('images/pattern.png') #000 top left repeat-x;
-	border-left: 1px solid darkgreen;
-	border-right: 1px solid darkgreen;
+	border-left: 1px solid #040;
+	border-right: 1px solid #040;
 	z-index: 30;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 	}
 	
 #content h1 a, #content h1 a:visited {
-	color: forestgreen;
+	color: #0b0;
 	text-decoration: none;
 	}
 
@@ -130,7 +130,7 @@ a:hover {
 	}
 
 #content h2 a, #content h2 a:visited {
-	color: forestgreen;
+	color: #0b0;
 	text-decoration: none;
 	}
 
@@ -150,7 +150,7 @@ a:hover {
 	}
 
 #content h3 a, #content h3 a:visited  {
-	color: forestgreen;
+	color: #0b0;
 	text-decoration: none;
 	}
 
@@ -285,7 +285,7 @@ blockquote {
 	}
 
 #sidebar ul li a {
-	color: forestgreen;
+	color: #0b0;
 	text-decoration: none;
 	}
 
@@ -303,7 +303,7 @@ blockquote {
 }
 
 hr {
-   color: green;
+   color: #080;
    border: 1px solid;
 /*   clear: both; */
 }
@@ -391,7 +391,7 @@ input, option, textarea {
 }
 
 .boxed {
-   border: 2px solid green;
+   border: 2px solid #080;
    -moz-border-radius:  10px 10px 10px 10px;
    padding: 1em;
    margin-top: 25px;
@@ -409,7 +409,7 @@ input, option, textarea {
 }
 
 .boxed span {
-   color: green;
+   color: #080;
    font-weight: bold;
 }
 
