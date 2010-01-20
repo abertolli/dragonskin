@@ -5,13 +5,10 @@
 <div id="footer">
 
 <p class="credit">
-<!--
-<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds.
-<?php echo sprintf(__("Powered by <a href='http://wordpress.org/' title='%s'><strong>WordPress</strong></a>"), __("Powered by WordPress, state-of-the-art semantic personal publishing platform.")); ?>
--->
 
 <?php /*
-Please leave the link to let people know where to get this theme, or provide a link in your blogroll.
+Under the license for this theme, you are allowed to completely modify any of this code.  However,
+please leave the link to let people know where to get this theme, or provide a link in your blogroll.
 */ ?>
 
 <br />
