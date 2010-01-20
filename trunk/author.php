@@ -96,7 +96,6 @@ endif;
 				
 			<!--optional excerpt or automatic excerpt of the post-->
 				<?php the_excerpt(); ?>
-				<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
 			
 	       <!--one post end-->
 		<?php endwhile; ?>

@@ -15,8 +15,6 @@
 
 	<?php edit_post_link("Edit this post", "<div align=\"right\">", "</div>"); ?>
 
-	<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
-
 	<?php if(function_exists('coauthors_posts_links')) {
 		// Support for coauthors plugin
 	?>
