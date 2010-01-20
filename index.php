@@ -29,8 +29,6 @@
 				<!--post text with the read more link-->
 					<p> <?php the_content('See the rest of this entry...'); ?> </p>
 
-<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
-
 				<!--show categories, edit link ,comments-->
 				<p>
 				<b>Topics:</b> <?php the_category(', ') ?> |
