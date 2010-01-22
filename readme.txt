@@ -33,6 +33,13 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Versions ====
 
+== 1.5 ==
+  * Changes to comply with WordPress repository guidelines.
+  * Removed leftover clickheat code.
+
+== 1.4 ==
+  * Changes to comply with WordPress repository guidelines.
+
 == 1.3 ==
   * Added image for nicer looking blockquote
   * Added comment capability back to pages, but don't display "comments disabled" when turned off
