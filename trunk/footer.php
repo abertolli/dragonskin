@@ -6,11 +6,6 @@
 
 <p class="credit">
 
-<?php /*
-Under the license for this theme, you are allowed to completely modify any of this code.  However,
-please leave the link to let people know where to get this theme, or provide a link in your blogroll.
-*/ ?>
-
 <br />
 
 <a href="http://wordpress.org/"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/wordpress-80x15.png" alt="Powered by WordPress" border="0" /></a>
@@ -23,8 +18,6 @@ please leave the link to let people know where to get this theme, or provide a l
 </div>
 
 <?php wp_footer(); ?>
-
-<?php if (is_readable(TEMPLATEPATH."/clickheat.php")) include(TEMPLATEPATH."/clickheat.php"); ?>
 
 </body>
 </html>
