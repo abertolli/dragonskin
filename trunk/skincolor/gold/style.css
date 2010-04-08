@@ -1,472 +1,56 @@
-/*  
-Theme Name: Dragonskin (Gold)
-Theme URI: http://bitfreedom.com/dragonskin
-Template: dragonskin
-Description: Wrap your blog in the skin of a dragon!  Dragonskin is a dark theme that features a CSS-drive drop-down menu, support for multiple authors, and fluid width for flexible resolution support.
-Author: Angelo Bertolli
-Author URI: http://bitfreedom.com/
-Version: 1.5
-Tags: black, gold, two-columns, flexible-width, custom-header
-
-Please note this child theme depends on the original dragonskin theme.
-You must have dragonskin in your themes directory for this to work.
-
+/*
+Dragonskin Gold
+#ba4, #cb0, #dc3, #dc5
 */
-
-/* #ba4, #cb0, #dc3, #dc5 */
 
 body {
 	background: #000 url('images/dragonskin.jpg');
-	color: #bbb;
-	font-size: 10pt;
-	font-family: Verdana, Helvetica, Arial, Sans-Serif;
-	z-index: 0;
 }
 
 a, a:visited {
 	color: #dc5;
-	text-decoration: underline;
 }
 	
-a:hover {
-	color: #fff;
-	background: transparent;
-	text-decoration: none;
-}
-
-#header { 
-	background: transparent;
-	margin-left: 1%;
-	margin-right: 1%;
-}
-
-#header h1 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: bold;
-	font-size: 40pt;
-	margin: 0px;
-}
-
-#header h1 a, #header h1 a:hover {
-        color: #888;
-        text-decoration: none;
-}
-        
-#header h2 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
-	margin: 0px;
-}
 
 #header h2 a {
 	color: #dc3;
-	text-decoration: none;
-}
-
-#header h2 a:hover {
-	color: #fff;
-	text-decoration: none;
-}
-
-#header h3 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
-	margin: 0px;
-}
-
-#container, #footer { /* width of main area */
-	margin-left: 8px;
-	margin-right: 8px;
 }
 
 #container { 
-	text-align: left;
-	padding: 0px;
 	background:  url('images/pattern.png') #000 top left repeat-x;
 	border-left: 1px solid #ba4;
 	border-right: 1px solid #ba4;
-	z-index: 30;
 }
 
-#content {
-   background: transparent;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 1%;
-	margin-right: 28%;
-	position: relative;
-	padding: 5px;
-	}
-	
-#content p img{
-	border: none;
-	}
-
-#content h1 {
-	color: #aaa;
-	font-size: 24pt;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
-	padding: 10px 10px 10px 10px;
-	line-height: 150%;
-	margin: 0px;
-	}
 	
 #content h1 a, #content h1 a:visited {
 	color: #dc3;
-	text-decoration: none;
-	}
-
-#content h1 a:hover {
-	color: #fff;
-	text-decoration: none;
-	}
-
-#content h2 {
-	color: #aaa;
-        font-size: 20pt;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
-	}
+}
 
 #content h2 a, #content h2 a:visited {
 	color: #dc3;
-	text-decoration: none;
-	}
-
-#content h2 a:hover {
-	color: #fff;
-	background: transparent;
-	text-decoration: none;
-	}
-
-#content h3 {
-	color: #aaa;
-	font-size: 16pt;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: bold;
-	line-height: 120%;
-	margin-bottom: 0px;
-	}
+}
 
 #content h3 a, #content h3 a:visited  {
 	color: #dc3;
-	text-decoration: none;
-	}
-
-#content h3 a:hover {
-	color: #fff;
-	text-decoration: none;
-	font-weight: normal;
-	}
-
-#content ol {
-	list-style-type: decimal;
-	line-height: 18px;
-	margin: 0px;
-	padding: 0px 0px 10px 30px;
-	}
-#content ul {
-	list-style: none;
-	margin: 0px;
-	padding: 0px 0px 10px 0px;
-	}
-	
-#content li {
-	margin: 0px;
-	padding: 0px;
-	}
-	
-#content ul li {
-	list-style: square inside;
-	margin: 0px 0px 0px 10px;
-	padding: 5px 0px 0px 0px;
-	}
-	
-#content ul li a {
-/*
-	color: #666666;
-	text-decoration: underline;
-*/
-	}
-
-#content ul li a:hover {
-/*
-	color: #000000;
-	text-decoration: underline;
-*/
-	}
-
-blockquote {
-	margin: 0px 0px 0px 25px;
-	padding: 0px 25px 0px 10px;
-	color: #666;
 }
-
-#content blockquote p {
-	margin: 0px 0px 20px 0px;
-	padding: 0px;
-	padding-left: 45px;
-	background: transparent url('images/quote.gif') no-repeat scroll 5px 5px;
-	min-height: 28px;
-}
-
-.postspace {
-	background: transparent;
-	width: 440px;
-	height: 32px;
-	margin: 0px;
-	padding: 0px;
-	}
-
-.postspace2 {
-	background: transparent;
-	width: 440px;
-	height: 0px;
-	margin: 0px;
-	padding: 0px;
-	}
-
-.postspace3 {
-/*
-	background: transparent;
-	width: 440px;
-	height: 15px;
-	margin: 0px;
-	padding: 0px;
-*/
-	}
-
-#sidebar {
-	color: #888;
-   background: #000;
-	width: 25%;
-	float: right; 
-	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px 5px 3px 10px;
-   z-index: 20;
-	}
-
-#sidebar p{
-	margin: 0px;
-	line-height: 16px;
-	padding: 5px 0px 10px 0px;
-	}
-
-#sidebar h2 {
-	color: #aaa;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-        font-size: 14pt;
-	font-weight: normal;
-	list-style: none;
-	padding: 10px 0px 10px 0px;
-	margin: 0px;
-	}
-
-#sidebar h3 {
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-}
-
-#sidebar ul {
-	list-style: none;
-	margin: 0px;
-	padding: 0px 0px 20px 0px;
-	}
-	
-#sidebar li {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-	}
-	
-#sidebar ul li {
-	list-style: none;
-	}
 
 #sidebar ul li a {
 	color: #dc3;
-	text-decoration: none;
-	}
-
-#sidebar ul li a:hover {
-	color: #fff;
-	text-decoration: none;
-	}
+}
 
 #footer {
         background:  url('images/pattern.png') transparent top left repeat-x;
-	border-top: 1px;
-	padding: 8px 0px 10px 0px;
-	text-align: center;
-	clear: both;
 }
 
 hr {
    color: #cb0;
-   border: 1px solid;
-/*   clear: both; */
-}
-
-.author {
-   color: #888;
-   font-size: 9pt;
-}
-
-input, option, textarea {
-   background:                #ccc;
-   color:                     #000;
-   border:                    1px solid #000;
-   font-family:               Arial, sans-serif;
-   font-size:                 8pt;
-}
-
-#nav, #nav ul { /* all lists */
-   padding: 0;
-   margin: 0;
-   list-style: none;
-   line-height: 1;
-   z-index: 100;
-   text-align: left;
-}
-
-#nav ul {
-   border:  1px solid #888;
-   text-align: left;
-   -moz-border-radius:  10px 10px 10px 10px;
-}
-
-#nav a {
-   display: block;
-   width: 9em;
-   text-decoration: none;
-   border:  1px solid #000;
-   padding-left: 0.5em;
-}
-
-#nav a:hover {
-   text-decoration: none;
-   border:  1px solid #888;
-   -moz-border-radius:  5px 5px 5px 5px;
-   padding-left: 0.5em;
-}
-
-#nav li { /* all list items */
-   float: left;
-   width: 10em; /* width needed or else Opera goes nuts */
-}
-
-#nav li h2, #nav li h3 {
-   text-align: center;
-}
-
-#nav li ul { /* second-level lists */
-   position: absolute;
-   background: #000;
-   width: 10em;
-   left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
-   padding: 0.2em;
-}
-
-#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */
-   left: auto;
-}
-
-.menu {
-   font-weight: bold;
-   text-align: center;
-}
-
-.credit, .credit a {
-   color: #888;
-}
-
-#adrotator {
-   position: relative;
-   margin-top: 15px;
-}
-
-#searchform, #randompage {
-   display: inline;
 }
 
 .boxed {
    border: 2px solid #cb0;
-   -moz-border-radius:  10px 10px 10px 10px;
-   padding: 1em;
-   margin-top: 25px;
-   z-index: -1;
-}
-
-.boxed h3 {
-   margin-top: -1.2em;
-   background: #000;
-   z-index: 1;
-   float: left;
-   padding-right: 0.5em;
-   padding-left: 0.5em;
-   line-height: 1.2em;
 }
 
 .boxed span {
    color: #cb0;
-   font-weight: bold;
-}
-
-div.clear_content {
-   clear: both;
-   float: none;
-}
-
-/* Below is untested code required by wordpress? */
-
-.aligncenter,
-div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.alignleft {
-   float: left;
-}
-
-.alignright {
-   float: right;
-}
-
-.wp-caption {
-   color: #000;
-   border: 1px solid #ddd;
-   text-align: center;
-   background-color: #ccc;
-   padding-top: 4px;
-   margin: 10px;
-   /* optional rounded corners for browsers that support it */
-   -moz-border-radius: 3px;
-   -khtml-border-radius: 3px;
-   -webkit-border-radius: 3px;
-   border-radius: 3px;
-}
-
-.wp-caption img {
-   margin: 0;
-   padding: 0;
-   border: 0 none;
-}
-
-.wp-caption p.wp-caption-text {
-   font-size: 11px;
-   line-height: 17px;
-   padding: 0 4px 5px;
-   margin: 0;
-}
-
-.entry_author_image, .entry_author_image img {
-   text-align: center;
-   border: none;
 }
