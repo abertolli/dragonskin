@@ -1,28 +1,25 @@
 /*
 Theme Name: Dragonskin
 Theme URI: http://bitfreedom.com/dragonskin
-Description: Wrap your blog in the skin of a dragon!  Dragonskin is a dark theme that features a CSS-drive drop-down menu, support for multiple authors, and fluid width for flexible resolution support.  Also included are <a href="http://bitfreedom.com/dragonchild">child themes with different colors</a>.
+Description: Wrap your blog in the skin of a dragon!  Dragonskin is a dark theme that features a CSS-drive drop-down menu, support for multiple authors, and fluid width for flexible resolution support.  Select different color schemes from Appearance -> Dragonskin Options</a>.
 Author: Angelo Bertolli
 Author URI: http://bitfreedom.com/
-Version: 1.5
-Tags: black, red, two-columns, flexible-width, custom-header
-
-You can see child theme screenshots at:
-http://bitfreedom.com/dragonchild
-
-I developed this theme to go along with my D&D fan site at
-http://heroesonly.com
+Version: 2.0
+Tags: black, red, gold, green, two-column, flexible-width, custom-header
 
 The TXT/CSS/XHTML/HTML/PHP is distributed under the terms of
 the GPL license.  Please see the readme.txt file for information
 on features and redistribution.
+
+I developed this theme to go along with my D&D fan site at
+http://heroesonly.com
 
 */
 
 /* 400, 800, b00, c00 */
 
 body {
-	background: #000 url('images/dragonskin.jpg');
+	background: #600 url('images/dragonskin-texture.png');
 	color: #bbb;
 	font-size: 10pt;
 	font-family: Verdana, Helvetica, Arial, Sans-Serif;
@@ -91,10 +88,19 @@ a:hover {
 #container { 
 	text-align: left;
 	padding: 0px;
-	background:  url('images/pattern.png') #000 top left repeat-x;
+	background: #000;
 	border-left: 1px solid #400;
 	border-right: 1px solid #400;
 	z-index: 30;
+}
+
+div .border {
+        background: #c00 url('images/border-texture.png') top left repeat-x;
+	margin: 0;
+	padding: 0;
+	min-height: 12px;
+	max-height: 12px;
+	border-bottom: 1px solid #400;
 }
 
 #content {
@@ -216,8 +222,8 @@ blockquote {
 	margin: 0px 0px 20px 0px;
 	padding: 0px;
 	padding-left: 45px;
-	background: transparent url('images/quote.gif') no-repeat scroll 5px 5px;
-	min-height: 28px;
+	background: transparent url('images/quote.png') no-repeat scroll 0px 0px;
+	min-height: 30px;
 }
 
 .postspace {
@@ -305,11 +311,14 @@ blockquote {
 	}
 
 #footer {
-        background:  url('images/pattern.png') transparent top left repeat-x;
 	border-top: 1px;
 	padding: 8px 0px 10px 0px;
 	text-align: center;
 	clear: both;
+}
+
+#antipixel {
+	background: #800;
 }
 
 hr {
@@ -344,19 +353,23 @@ input, option, textarea {
    border:  1px solid #888;
    text-align: left;
    -moz-border-radius:  10px 10px 10px 10px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   line-height: 1;
 }
 
 #nav a {
    display: block;
-   width: 9em;
+   width: 10em;
    text-decoration: none;
-   border:  1px solid #000;
+   border:  0px solid #000;
    padding-left: 0.5em;
 }
 
 #nav a:hover {
    text-decoration: none;
-   border:  1px solid #888;
+   border:  0px solid #888;
    -moz-border-radius:  5px 5px 5px 5px;
    padding-left: 0.5em;
 }
@@ -375,7 +388,11 @@ input, option, textarea {
    background: #000;
    width: 10em;
    left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
-   padding: 0.2em;
+   padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+#nav li ul li ul {
+   margin-left: 2em;
 }
 
 #nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */

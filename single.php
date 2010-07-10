@@ -22,9 +22,8 @@
 		By <?php coauthors_posts_links(); ?> on <?php the_time('F j, Y'); ?>
 		</p>
 	<?php } else {
-		// Original section if coauthors isnt installed
-		global $wp_query;
-		$curauth = get_userdata($wp_query->get_queried_object()->post_author); // Magick
+		// If coauthors isnt installed
+		$curauth = $wp_query->get_queried_object();
 	?>
 		<p class="author">
 		Posted by
