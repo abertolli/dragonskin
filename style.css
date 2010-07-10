@@ -361,15 +361,15 @@ input, option, textarea {
 
 #nav a {
    display: block;
-   width: 10em;
+   width: 9em;
    text-decoration: none;
-   border:  0px solid #000;
+   border:  1px solid #000;
    padding-left: 0.5em;
 }
 
 #nav a:hover {
    text-decoration: none;
-   border:  0px solid #888;
+   border:  1px solid #888;
    -moz-border-radius:  5px 5px 5px 5px;
    padding-left: 0.5em;
 }
@@ -388,11 +388,7 @@ input, option, textarea {
    background: #000;
    width: 10em;
    left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
-   padding: 0.2em 0.2em 0.2em 0.2em;
-}
-
-#nav li ul li ul {
-   margin-left: 2em;
+   padding: 0.2em;
 }
 
 #nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */
