@@ -32,8 +32,7 @@ if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 <?php } ?>
 
 <?php
-if (is_readable(TEMPLATEPATH."/navbar.php")) {
-	// Create the navbar
+if (is_readable(TEMPLATEPATH."/navbar.php")) { // Begin - check for navbar.php
 ?>
 
 <!-- Son of Suckerfish -->
@@ -59,7 +58,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 </td></tr></table>
 
 <?php
-} // End check for navbar.php
+} // End - check for navbar.php
 ?>
 
 <?php include (TEMPLATEPATH . '/searchform.php'); ?>
@@ -69,8 +68,9 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 
 </div>
 
-
 <div id="container">
+
+<div class="border"></div>
 
 
 <!--header.php end-->
