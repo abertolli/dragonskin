@@ -8,19 +8,24 @@ http://heroesonly.com/.
    * Author profile pages that feature the authors as well as their posts.
    * Navigation bar with drop-down menus
    * Supports an optional header image to replace the text title: include an image images/header.gif
+   * Support for multiple colors through simple CSS modification
 
 === Integrated Support for plugins ===
    * Random Redirect (http://wordpress.org/extend/plugins/random-redirect/)
    * Coauthors (http://wordpress.org/extend/plugins/co-authors/)
    * Smart 404 (http://wordpress.org/extend/plugins/smart-404/)
 
+=== How to Change Color ===
+The colors/ directory contains .css files.  Simply copy one of these files as
+skincolor.css to the main theme directory.  For example:  cp colors/gold.css
+skincolor.css.  You may modify skincolor.css to change the colors yourself.
+
 ==== Feedback ====
 Please visit the theme URL to leave feedback including requests
 and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Wishlist ====
-   * Support multiple colors
-   * Write a nicer description of the theme and include helpful links or screenshots as necessary
+   * Admin panel color chooser
    * Nested display for child pages and categories
    * Threaded comments
    * Paginate comments (http://codex.wordpress.org/Migrating_Plugins_and_Themes_to_2.7/Enhanced_Comment_Display)
@@ -36,6 +41,8 @@ and patches.  http://bitfreedom.com/dragonskin/
 == 2.0 ==
   * Improved images and added transparency.
   * Changed width of display area.
+  * Added color change capability through CSS
+  * Improved author profile page to include listing of all articles, and the full latest post.
 
 == 1.5 ==
   * Changes to comply with WordPress repository guidelines.
