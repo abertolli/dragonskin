@@ -1,0 +1,389 @@
+http://codex.wordpress.org/Category:Deprecated_Functions
+
+Find them in the code:
+find wordpress/ -name "*deprecated*php" -exec grep ^function {} \; | awk -F "[ |(]" ' { print $2; } '
+
+Take that list and find them in the theme:
+cat list-of-functions.txt | while read function
+do
+	grep -r $function dragonskin/
+done
+
+
+wp_setcookie :
+wp_clearcookie :
+wp_get_cookie_login :
+wp_login :
+wp-content/themes/dragonskin/navbar.php:[9C<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/sidebar.php:<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/404.php:[9C<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+get_postdata :
+start_wp :
+the_category_ID :
+the_category_head :
+previous_post :
+wp-content/themes/dragonskin/index.php:[9C<?php previous_posts_link('&laquo; Previous Entries') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/author.php:[16C<?php previous_posts_link('&laquo; Previous') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/author.php:[16C<?php previous_posts_link('&laquo; Previous') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/archive.php:[23C<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+wp-content/themes/dragonskin/search.php:[16C<?php previous_posts_link('&laquo; Previous Entries') ?> ...[1m[34m^M[m[37m[40m[1m
+next_post :
+wp-content/themes/dragonskin/index.php:[16C<?php next_posts_link('Next Entries &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/author.php:[16C<?php next_posts_link('Next &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/author.php:[16C<?php next_posts_link('Next &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/archive.php:[23C<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+wp-content/themes/dragonskin/search.php:[16C<?php next_posts_link('Next Entries &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+user_can_create_post :
+user_can_create_draft :
+user_can_edit_post :
+user_can_delete_post :
+user_can_set_post_date :
+user_can_edit_post_date :
+user_can_edit_post_comments :
+user_can_delete_post_comments :
+user_can_edit_user :
+get_linksbyname :
+wp_get_linksbyname :
+get_linkobjectsbyname :
+get_linkobjects :
+get_linksbyname_withrating :
+get_links_withrating :
+get_autotoggle :
+list_cats :
+wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp_list_cats :
+wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+dropdown_cats :
+list_authors :
+wp-content/themes/dragonskin/navbar.php:[9C<?php wp_list_authors(); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/sidebar.php:[15C<?php wp_list_authors('show_fullname=1&optioncount=1'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/404.php:[9C<?php wp_list_authors(); ?>[1m[34m^M[m[37m[40m[1m
+wp_get_post_cats :[53;173H52,1[10CTop"-stdin-" 190L, 8711C[53;173H[K[53;173H52,1[10CTop[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+[1;53r[52;1Hwp_set_post_cats :[53;1H[K[53;173H53,1[11C0%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --27%--[143C53,1[11C0%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+[1;53r[52;1Hget_archives :[53;1H[K[53;173H54,1[11C1%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --28%--[143C54,1[11C1%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+[1;53r[52;1Hwp-content/themes/dragonskin/navbar.php:[9C<?php wp_get_archives('type=postbypost&limit=4'); ?>[1m[34m^M[m[37m[40m[1m[53;1H[K[53;173H55,1[11C2%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --28%--[143C55,1[11C2%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+[1;53r[52;1Hwp-content/themes/dragonskin/sidebar.php:[7C<?php wp_get_archives('type=postbypost&limit=10'); ?>[1m[34m^M[m[37m[40m[1m[53;1H[K[53;173H56,1[11C2%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --29%--[143C56,1[11C2%[52;1H[?12l[?25h[?25l
+Type  :quit<Enter>  to exit Vim[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h[?25l[53;173H[K[53;173H56,1[11C2%[52;1H[?12l[?25h
+[39;49m[m[?1l>[?1049lVim: Error reading input, exiting...
+Vim: Finished.
+[53;1H[27m[m[37m[40m[1m[39;49m[mVim: Reading from stdin...
+set_current_user :
+wp-content/themes/dragonskin/deprecated.txt:[?1049h[?1h=[27m[m[37m[40m[1m[H[2J[?25l[53;1H"-stdin-" 190L, 8711C[1;53r[?12;25h[?12l[?25h[27m[m[37m[40m[1m[H[2J[40m[37m[27m[m[37m[40m[1m[H[2J[1;1Hset_current_user :
+wp_setcookie :
+wp-content/themes/dragonskin/deprecated.txt:wp_setcookie :
+wp_clearcookie :
+wp-content/themes/dragonskin/deprecated.txt:wp_clearcookie :
+wp_get_cookie_login :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_cookie_login :
+wp_login :
+wp-content/themes/dragonskin/deprecated.txt:wp_login :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/navbar.php:[9C<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/sidebar.php:<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<li><?php wp_loginout(); ?></li>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/navbar.php:         <li><?php wp_loginout(); ?></li>
+wp-content/themes/dragonskin/sidebar.php:<li><?php wp_loginout(); ?></li>
+wp-content/themes/dragonskin/404.php:         <li><?php wp_loginout(); ?></li>
+get_postdata :
+wp-content/themes/dragonskin/deprecated.txt:get_postdata :
+start_wp :
+wp-content/themes/dragonskin/deprecated.txt:start_wp :
+the_category_ID :
+wp-content/themes/dragonskin/deprecated.txt:the_category_ID :
+the_category_head :
+wp-content/themes/dragonskin/deprecated.txt:the_category_head :
+previous_post :
+wp-content/themes/dragonskin/deprecated.txt:previous_post :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/index.php:[9C<?php previous_posts_link('&laquo; Previous Entries') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/author.php:[16C<?php previous_posts_link('&laquo; Previous') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/author.php:[16C<?php previous_posts_link('&laquo; Previous') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/archive.php:[23C<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/search.php:[16C<?php previous_posts_link('&laquo; Previous Entries') ?> ...[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/index.php:		<?php previous_posts_link('&laquo; Previous Entries') ?>
+wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>
+wp-content/themes/dragonskin/author.php:		<?php previous_posts_link('&laquo; Previous') ?>
+wp-content/themes/dragonskin/author.php:		<?php previous_posts_link('&laquo; Previous') ?>
+wp-content/themes/dragonskin/archive.php:			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+wp-content/themes/dragonskin/search.php:		<?php previous_posts_link('&laquo; Previous Entries') ?> ...
+next_post :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:next_post :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/index.php:[16C<?php next_posts_link('Next Entries &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/author.php:[16C<?php next_posts_link('Next &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/author.php:[16C<?php next_posts_link('Next &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/archive.php:[23C<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/search.php:[16C<?php next_posts_link('Next Entries &raquo;') ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/index.php:                <?php next_posts_link('Next Entries &raquo;') ?>
+wp-content/themes/dragonskin/single.php:<p><?php previous_post_link('&laquo; %link  |') ?>  <a href="<?php bloginfo('url'); ?>">Home</a>  <?php next_post_link('|  %link &raquo;') ?></p>
+wp-content/themes/dragonskin/author.php:		<?php next_posts_link('Next &raquo;') ?>
+wp-content/themes/dragonskin/author.php:		<?php next_posts_link('Next &raquo;') ?>
+wp-content/themes/dragonskin/archive.php:			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+wp-content/themes/dragonskin/search.php:		<?php next_posts_link('Next Entries &raquo;') ?>
+user_can_create_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_create_post :
+user_can_create_draft :
+wp-content/themes/dragonskin/deprecated.txt:user_can_create_draft :
+user_can_edit_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_date :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_comments :
+user_can_delete_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_delete_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_delete_post_comments :
+user_can_set_post_date :
+wp-content/themes/dragonskin/deprecated.txt:user_can_set_post_date :
+user_can_edit_post_date :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_date :
+user_can_edit_post_comments :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_comments :
+user_can_delete_post_comments :
+wp-content/themes/dragonskin/deprecated.txt:user_can_delete_post_comments :
+user_can_edit_user :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_user :
+get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+get_linkobjects :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjects :
+get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+get_links_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_links_withrating :
+get_autotoggle :
+wp-content/themes/dragonskin/deprecated.txt:get_autotoggle :
+list_cats :
+wp-content/themes/dragonskin/deprecated.txt:list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp_list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/404.php:         <?php wp_list_cats('sort_column=name'); ?>
+wp_list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp_list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/404.php:         <?php wp_list_cats('sort_column=name'); ?>
+dropdown_cats :
+wp-content/themes/dragonskin/deprecated.txt:dropdown_cats :
+list_authors :
+wp-content/themes/dragonskin/deprecated.txt:list_authors :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/navbar.php:[9C<?php wp_list_authors(); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/sidebar.php:[15C<?php wp_list_authors('show_fullname=1&optioncount=1'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_authors(); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/navbar.php:         <?php wp_list_authors(); ?>
+wp-content/themes/dragonskin/sidebar.php:		<?php wp_list_authors('show_fullname=1&optioncount=1'); ?>
+wp-content/themes/dragonskin/404.php:         <?php wp_list_authors(); ?>
+wp_get_post_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_post_cats :[53;173H52,1[10CTop"-stdin-" 190L, 8711C[53;173H[K[53;173H52,1[10CTop[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+wp_set_post_cats :
+wp-content/themes/dragonskin/deprecated.txt:[1;53r[52;1Hwp_set_post_cats :[53;1H[K[53;173H53,1[11C0%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --27%--[143C53,1[11C0%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+get_archives :
+wp-content/themes/dragonskin/deprecated.txt:[1;53r[52;1Hget_archives :[53;1H[K[53;173H54,1[11C1%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --28%--[143C54,1[11C1%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+wp-content/themes/dragonskin/deprecated.txt:[1;53r[52;1Hwp-content/themes/dragonskin/navbar.php:[9C<?php wp_get_archives('type=postbypost&limit=4'); ?>[1m[34m^M[m[37m[40m[1m[53;1H[K[53;173H55,1[11C2%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --28%--[143C55,1[11C2%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+wp-content/themes/dragonskin/deprecated.txt:[1;53r[52;1Hwp-content/themes/dragonskin/sidebar.php:[7C<?php wp_get_archives('type=postbypost&limit=10'); ?>[1m[34m^M[m[37m[40m[1m[53;1H[K[53;173H56,1[11C2%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --29%--[143C56,1[11C2%[52;1H[?12l[?25h[?25l
+wp-content/themes/dragonskin/navbar.php:         <?php wp_get_archives('type=postbypost&limit=4'); ?>
+wp-content/themes/dragonskin/sidebar.php:	<?php wp_get_archives('type=postbypost&limit=10'); ?>
+wp-content/themes/dragonskin/sidebar.php:		<?php wp_get_archives('type=monthly'); ?>
+wp-content/themes/dragonskin/404.php:         <?php get_archives('postbypost', 4); ?>
+wp-content/themes/dragonskin/header.php:	<?php wp_get_archives('type=monthly&format=link'); ?>
+get_author_link :
+link_pages :
+wp-content/themes/dragonskin/single.php:			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
+wp-content/themes/dragonskin/single.php:			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
+wp-content/themes/dragonskin/page.php:			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
+wp-content/themes/dragonskin/page.php:			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
+get_settings :
+permalink_link :
+permalink_single_rss :
+wp_get_links :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+get_links :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_links_withrating :
+get_links_list :
+links_popup_script :
+get_linkrating :
+get_linkcatname :
+comments_rss_link :
+get_category_rss_link :
+get_author_rss_link :
+comments_rss :
+create_user :
+gzip_compression :
+get_commentdata :
+get_catname :
+get_category_children :
+get_the_author_description :
+the_author_description :
+get_the_author_login :
+the_author_login :
+get_the_author_firstname :
+the_author_firstname :
+get_the_author_lastname :
+the_author_lastname :
+get_the_author_nickname :
+the_author_nickname :
+get_the_author_email :
+the_author_email :
+get_the_author_icq :
+the_author_icq :
+get_the_author_yim :
+the_author_yim :
+get_the_author_msn :
+the_author_msn :
+get_the_author_aim :
+the_author_aim :
+get_author_name :
+get_the_author_url :
+the_author_url :
+get_the_author_ID :
+the_author_ID :
+the_content_rss :
+make_url_footnote :
+_c :
+wp-content/themes/dragonskin/comments.php:			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
+wp-content/themes/dragonskin/deprecated.txt:[?1049h[?1h=[27m[m[37m[40m[1m[H[2J[?25l[53;1H"-stdin-" 190L, 8711C[1;53r[?12;25h[?12l[?25h[27m[m[37m[40m[1m[H[2J[40m[37m[27m[m[37m[40m[1m[H[2J[1;1Hset_current_user :
+wp-content/themes/dragonskin/deprecated.txt:wp_clearcookie :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_cookie_login :
+wp-content/themes/dragonskin/deprecated.txt:the_category_ID :
+wp-content/themes/dragonskin/deprecated.txt:the_category_head :
+wp-content/themes/dragonskin/deprecated.txt:user_can_create_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_create_draft :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_delete_post :
+wp-content/themes/dragonskin/deprecated.txt:user_can_set_post_date :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_date :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_post_comments :
+wp-content/themes/dragonskin/deprecated.txt:user_can_delete_post_comments :
+wp-content/themes/dragonskin/deprecated.txt:user_can_edit_user :
+wp-content/themes/dragonskin/deprecated.txt:list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:wp_list_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/404.php:[9C<?php wp_list_cats('sort_column=name'); ?>[1m[34m^M[m[37m[40m[1m
+wp-content/themes/dragonskin/deprecated.txt:dropdown_cats :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_post_cats :[53;173H52,1[10CTop"-stdin-" 190L, 8711C[53;173H[K[53;173H52,1[10CTop[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+wp-content/themes/dragonskin/deprecated.txt:[1;53r[52;1Hwp_set_post_cats :[53;1H[K[53;173H53,1[11C0%[?12l[?25h[?25l[53;173H[K[53;1H:file"[No Name]" 190 lines --27%--[143C53,1[11C0%[52;1H[?12l[?25h[?25l[53;1H[K[53;1H:redraw[1;52r[52;1H
+wp-content/themes/dragonskin/deprecated.txt:set_current_user :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:[?1049h[?1h=[27m[m[37m[40m[1m[H[2J[?25l[53;1H"-stdin-" 190L, 8711C[1;53r[?12;25h[?12l[?25h[27m[m[37m[40m[1m[H[2J[40m[37m[27m[m[37m[40m[1m[H[2J[1;1Hset_current_user :
+wp-content/themes/dragonskin/deprecated.txt:wp_clearcookie :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:wp_clearcookie :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_cookie_login :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:wp_get_cookie_login :
+wp-content/themes/dragonskin/deprecated.txt:the_category_ID :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:the_category_ID :
+wp-content/themes/dragonskin/deprecated.txt:the_category_head :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:the_category_head :
+wp-content/themes/dragonskin/navbar.php:         <?php wp_list_categories('orderby=name&title_li=0&hierarchical=1'); ?>
+wp-content/themes/dragonskin/comments-popup.php:	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php echo get_option('blog_charset'); ?>" />
+wp-content/themes/dragonskin/comments-popup.php:<p><a href="<?php echo get_post_comments_feed_link($post->ID); ?>"><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post.</a></p>
+wp-content/themes/dragonskin/comments-popup.php:$commenter = wp_get_current_commenter();
+wp-content/themes/dragonskin/comments-popup.php:$comments = get_approved_comments($id);
+wp-content/themes/dragonskin/style.css:div.clear_content {
+wp-content/themes/dragonskin/index.php:					<p> <?php the_content('See the rest of this entry...'); ?> </p>
+wp-content/themes/dragonskin/index.php:				<b>Topics:</b> <?php the_category(', ') ?> |
+wp-content/themes/dragonskin/footer.php:<div class="clear_content"></div>
+wp-content/themes/dragonskin/sidebar.php:		<ul><?php wp_list_categories('orderby=name'); ?>
+wp-content/themes/dragonskin/single.php:			<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+wp-content/themes/dragonskin/single.php:<p><b>Categories:</b> <?php the_category(', ') ?> <br />
+wp-content/themes/dragonskin/404.php:         <?php wp_list_cats('sort_column=name'); ?>
+wp-content/themes/dragonskin/author.php:<?php the_time('d M Y'); ?> in <?php the_category('&');?>
+wp-content/themes/dragonskin/archive.php: 	  <?php /* If this is a category archive */ if (is_category()) { ?>
+wp-content/themes/dragonskin/archive.php:		<h2 class="pagetitle">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
+wp-content/themes/dragonskin/archive.php:					<?php the_content() ?>
+wp-content/themes/dragonskin/archive.php:				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit this post', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+wp-content/themes/dragonskin/page.php:			<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+wp-content/themes/dragonskin/search.php:                                <br />(Posted in <?php the_category(', ') ?>)
+translate_with_context :
+_nc :
+__ngettext :
+__ngettext_noop :
+get_alloptions :
+get_the_attachment_link :
+get_attachment_icon_src :
+get_attachment_icon :
+get_attachment_innerHTML :
+get_link :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjects :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_links_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_linkobjects :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linkobjectsbyname :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linkobjects :
+wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_linksbyname_withrating :
+wp-content/themes/dragonskin/deprecated.txt:get_links_withrating :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_links_withrating :
+wp-content/themes/dragonskin/deprecated.txt:wp_get_links :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:wp_get_linksbyname :
+wp-content/themes/dragonskin/deprecated.txt:get_links :
+wp-content/themes/dragonskin/deprecated.txt:wp-content/themes/dragonskin/deprecated.txt:get_links
+sanitize_url :
+clean_url :
+js_escape :
+wp_specialchars :
+wp-content/themes/dragonskin/searchform.php:<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" alt="search" size="60" />
+attribute_escape :
+wp-content/themes/dragonskin/comments-popup.php:	<input type="hidden" name="redirect_to" value="<?php echo attribute_escape($_SERVER["REQUEST_URI"]); ?>" />
+register_sidebar_widget :
+unregister_sidebar_widget :
+register_widget_control :
+unregister_widget_control :
+delete_usermeta :
+get_usermeta :
+update_usermeta :
+automatic_feed_links :
+get_profile :
+get_usernumposts :
+funky_javascript_callback :
+funky_javascript_fix :
+trackback_rdf :
+is_taxonomy :
+is_term :
+generate_random_password :
+is_site_admin :
+graceful_fail :
+get_user_details :
+clear_global_post_cache :
+is_main_blog :
+validate_email :
+get_blog_list :
+get_most_active_blogs :
+tinymce_include :
+documentation_link :
+wp_shrink_dimensions :
+dropdown_categories :
+dropdown_link_categories :
+wp_dropdown_cats :
+add_option_update_handler :
+remove_option_update_handler :
+codepress_get_lang :
+codepress_footer_js :
+use_codepress :
+wpmu_menu :
+wpmu_checkAvailableSpace :
+mu_options :
+activate_sitewide_plugin :
+deactivate_sitewide_plugin :
+is_wpmu_sitewide_plugin :
