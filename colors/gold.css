@@ -1,0 +1,44 @@
+/*
+Skin: Gold
+*/
+
+/* Background */
+body,
+#antipixel {
+	background-color: #a80;
+}
+
+div .border {
+        background-color: #fc4;
+}
+
+
+
+/* Links */
+a, a:visited {
+	color: #dc5;
+}
+
+#content h1 a, #content h1 a:visited,
+#content h2 a, #content h2 a:visited,
+#content h3 a, #content h3 a:visited,
+#sidebar ul li a {
+	color: #dc3;
+}
+
+
+
+/* Borders */
+#container,
+.boxed,
+hr {
+	border-color: #a80;
+}
+
+
+/* Images */
+.wp-caption {
+   border-color: #cb0;
+   background-color: #a80;
+}
+
