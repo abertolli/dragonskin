@@ -53,13 +53,14 @@ endif;
 <ul>
 <!-- The Loop -->
 
-<?php query_posts("author=$curauth->ID&posts_per_page=50"); // This sets "Articles by" section - set to a high number?>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+query_posts("author=$curauth->ID&posts_per_page=-1"); // This gets all posts by author
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
   <li>
-<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-<?php the_title(); ?></a>, 
-<?php the_time('d M Y'); ?> in <?php the_category('&');?>
+<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php echo strip_tags(get_the_excerpt()); ?>">
+<?php the_title(); ?></a> 
+(<?php the_time('d M Y'); ?> in <?php the_category(', ');?>)
   </li>
 
   <?php endwhile; else: ?>
@@ -81,7 +82,7 @@ endif;
 
 
 		<?php if (have_posts()) :
-			query_posts("author=$curauth->ID&posts_per_page=".get_option('posts_per_page'));
+			query_posts("author=$curauth->ID&posts_per_page=1");
 			$post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
                 <!--loop article begin-->
@@ -95,7 +96,7 @@ endif;
 				<b><?php the_time('l, F jS, Y') ?></b>
 				
 			<!--optional excerpt or automatic excerpt of the post-->
-				<?php the_excerpt(); ?>
+				<?php global $more; $more=1; the_content(); ?>
 			
 	       <!--one post end-->
 		<?php endwhile; ?>
