@@ -16,8 +16,6 @@ http://heroesonly.com
 
 */
 
-/* 400, 800, b00, c00 */
-
 body {
 	background: #600 url('images/dragonskin-texture.png');
 	color: #bbb;
@@ -52,7 +50,7 @@ a:hover {
 }
 
 #header h1 a, #header h1 a:hover {
-        color: #888;
+        color: #ccc;
         text-decoration: none;
 }
         
@@ -61,11 +59,6 @@ a:hover {
 	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
 	font-weight: normal;
 	margin: 0px;
-}
-
-#header h2 a {
-	color: #b00;
-	text-decoration: none;
 }
 
 #header h2 a:hover {
@@ -100,7 +93,6 @@ div .border {
 	padding: 0;
 	min-height: 12px;
 	max-height: 12px;
-	border-bottom: 1px solid #400;
 }
 
 #content {
@@ -255,7 +247,7 @@ blockquote {
 #sidebar {
 	color: #888;
 	background: #000;
-	width: 30%;
+	width: 25%;
 	float: right; 
 	position: relative;
 	margin-top: 20px;
@@ -352,7 +344,10 @@ input, option, textarea {
 #nav ul {
    border:  1px solid #888;
    text-align: left;
-   -moz-border-radius:  10px 10px 10px 10px;
+   -moz-border-radius:  10px;
+   -khtml-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
    margin: 0;
    padding: 0;
    list-style: none;
@@ -370,7 +365,10 @@ input, option, textarea {
 #nav a:hover {
    text-decoration: none;
    border:  1px solid #888;
-   -moz-border-radius:  5px 5px 5px 5px;
+   -moz-border-radius:  5px;
+   -khtml-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
    padding-left: 0.5em;
 }
 
@@ -404,18 +402,16 @@ input, option, textarea {
    color: #888;
 }
 
-#adrotator {
-   position: relative;
-   margin-top: 15px;
-}
-
 #searchform, #randompage {
    display: inline;
 }
 
 .boxed {
    border: 2px solid #800;
-   -moz-border-radius:  10px 10px 10px 10px;
+   -moz-border-radius:  10px;
+   -khtml-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
    padding: 1em;
    margin-top: 25px;
    z-index: -1;
@@ -432,7 +428,7 @@ input, option, textarea {
 }
 
 .boxed span {
-   color: #800;
+   color: #ccc;
    font-weight: bold;
 }
 
@@ -440,8 +436,6 @@ div.clear_content {
    clear: both;
    float: none;
 }
-
-/* Below is untested code required by wordpress? */
 
 .aligncenter,
 div.aligncenter {
@@ -459,10 +453,10 @@ div.aligncenter {
 }
 
 .wp-caption {
-   color: #000;
-   border: 1px solid #ddd;
+   color: #fff;
+   border: 1px solid #800;
    text-align: center;
-   background-color: #ccc;
+   background-color: #400;
    padding-top: 4px;
    margin: 10px;
    /* optional rounded corners for browsers that support it */
