@@ -1,18 +1,16 @@
 ======= Dragonskin WordPress Theme =======
 This theme is two-column, fluid (width), with other features (below).
 
-I developed this theme to go along with my D&D fan site at
-http://heroesonly.com/.  If you are also using this for a gaming site,
-please consider linking to me in  your blogroll.
+I originally developed this theme to go along with my D&D fan site at
+http://heroesonly.com/.
 
 ==== Features ====
-   * Widget enabled
-   * Gravatar enabled
-   * Drop-down menu
+   * Author profile pages that feature the authors as well as their posts.
+   * Navigation bar with drop-down menus
    * Supports an optional header image to replace the text title: include an image images/header.gif
 
 === Integrated Support for plugins ===
-   * Random Redirect (http://ma.tt/2007/04/random-redirect-plugin/)
+   * Random Redirect (http://wordpress.org/extend/plugins/random-redirect/)
    * Coauthors (http://wordpress.org/extend/plugins/co-authors/)
    * Smart 404 (http://wordpress.org/extend/plugins/smart-404/)
 
@@ -20,8 +18,10 @@ please consider linking to me in  your blogroll.
 Please visit the theme URL to leave feedback including requests
 and patches.  http://bitfreedom.com/dragonskin/
 
-==== Future Plans ====
+==== Wishlist ====
+   * Support multiple colors
    * Write a nicer description of the theme and include helpful links or screenshots as necessary
+   * Nested display for child pages and categories
    * Threaded comments
    * Paginate comments (http://codex.wordpress.org/Migrating_Plugins_and_Themes_to_2.7/Enhanced_Comment_Display)
    * Custom header support through the admin panel
@@ -32,6 +32,10 @@ and patches.  http://bitfreedom.com/dragonskin/
    * Arcsin Website Templates - for the border image (http://templates.arcsin.se/the-hobbit-website-template/)
 
 ==== Versions ====
+
+== 2.0 ==
+  * Improved images and added transparency.
+  * Changed width of display area.
 
 == 1.5 ==
   * Changes to comply with WordPress repository guidelines.
