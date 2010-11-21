@@ -14,15 +14,15 @@ endif;
 ?>
 
 <div class="author">
-<h2><?php echo $curauth->nickname; ?></h2>
+<h2></h2>
 
 <div class="boxed">
-<h3>About</h3>
+<h3><?php echo $curauth->display_name; ?></h3>
 
 <?php if (trim($curauth->description)) { ?>
    <p><?php echo $curauth->description; ?></p>
 <?php } else { ?>
-   <p><?php echo $curauth->nickname; ?> is an author at <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>.</p>
+   <p><?php echo $curauth->display_name; ?> is an author at <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>.</p>
 <?php } ?>
 
 <ul>
