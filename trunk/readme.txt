@@ -8,7 +8,7 @@ http://heroesonly.com/.
    * Author profile pages that feature the authors as well as their posts.
    * Navigation bar with drop-down menus
    * Supports an optional header image to replace the text title: include an image images/header.gif
-   * Support for multiple colors through simple CSS modification
+   * Support for multiple colors
 
 === Integrated Support for plugins ===
    * Random Redirect (http://wordpress.org/extend/plugins/random-redirect/)
@@ -16,16 +16,14 @@ http://heroesonly.com/.
    * Smart 404 (http://wordpress.org/extend/plugins/smart-404/)
 
 === How to Change Color ===
-The colors/ directory contains .css files.  Simply copy one of these files as
-skincolor.css to the main theme directory.  For example:  cp colors/gold.css
-skincolor.css.  You may modify skincolor.css to change the colors yourself.
+The skins/ directory contains .css files.  Simply follow the example of one of
+these files.
 
 ==== Feedback ====
 Please visit the theme URL to leave feedback including requests
 and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Wishlist ====
-   * Admin panel color chooser
    * Nested display for child pages and categories
    * Threaded comments
    * Paginate comments (http://codex.wordpress.org/Migrating_Plugins_and_Themes_to_2.7/Enhanced_Comment_Display)
@@ -37,6 +35,10 @@ and patches.  http://bitfreedom.com/dragonskin/
    * Arcsin Website Templates - for the border image (http://templates.arcsin.se/the-hobbit-website-template/)
 
 ==== Versions ====
+
+== 2.1 ==
+  * Updated deprecated functions
+  * Added skin chooser
 
 == 2.0 ==
   * Improved images and added transparency.
