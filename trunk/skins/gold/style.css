@@ -1,0 +1,56 @@
+/*
+Dragonskin Gold
+#ba4, #cb0, #dc3, #dc5
+*/
+
+body {
+	background: #000 url('images/dragonskin.jpg');
+}
+
+a, a:visited {
+	color: #dc5;
+}
+	
+
+#header h2 a {
+	color: #dc3;
+}
+
+#container { 
+	background:  url('images/pattern.png') #000 top left repeat-x;
+	border-left: 1px solid #ba4;
+	border-right: 1px solid #ba4;
+}
+
+	
+#content h1 a, #content h1 a:visited {
+	color: #dc3;
+}
+
+#content h2 a, #content h2 a:visited {
+	color: #dc3;
+}
+
+#content h3 a, #content h3 a:visited  {
+	color: #dc3;
+}
+
+#sidebar ul li a {
+	color: #dc3;
+}
+
+#footer {
+        background:  url('images/pattern.png') transparent top left repeat-x;
+}
+
+hr {
+   color: #cb0;
+}
+
+.boxed {
+   border: 2px solid #cb0;
+}
+
+.boxed span {
+   color: #cb0;
+}
