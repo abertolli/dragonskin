@@ -124,7 +124,7 @@ function mytheme_add_admin() {
         }
     }
 
-    add_theme_page($themename." Options", "Dragonskin", 'edit_themes', basename(__FILE__), 'mytheme_admin');
+    add_theme_page($themename." Options", "Dragonskin Skin", 'edit_themes', basename(__FILE__), 'mytheme_admin');
 
 }
 
@@ -137,7 +137,7 @@ function mytheme_admin() {
     
 ?>
 <div class="wrap">
-<h2><?php echo $themename; ?> Skin</h2>
+<h2><?php echo $themename; ?> Options</h2>
 
 <form method="post">
 <br/>
