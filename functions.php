@@ -161,7 +161,7 @@ if ($value['type'] == "text") { ?>
         <td>
             <select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
                 <?php foreach ($value['options'] as $option) { ?>
-                <option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?>><?php echo $option; ?></option>
+                <option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } ?>><?php echo $option; ?></option>
                 <?php } ?>
             </select>
         </td>
