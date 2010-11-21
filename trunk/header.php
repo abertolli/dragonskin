@@ -21,7 +21,7 @@
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div id="header">
 <div align="center">
