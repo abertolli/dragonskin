@@ -1,7 +1,10 @@
 <?php
+
+$content_width = 480;
+add_theme_support( 'automatic-feed-links' );
+
 if ( function_exists('register_sidebar') )
     register_sidebar();	
-    
     
 // Add WP 3.0 Menu Theme Support
 if ( function_exists( 'add_theme_support' ) ) { 
@@ -16,6 +19,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 		);
 	}
 }
+
 
 // Make Menu Support compatible with earlier WP versions
 function theme_nav() {		
