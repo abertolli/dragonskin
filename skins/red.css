@@ -11,7 +11,7 @@ body,
 }
 
 div .border {
-        background-color: #f00;
+        background-color: #c00;
 }
 
 
@@ -34,7 +34,7 @@ a, a:visited {
 #container,
 .boxed,
 hr {
-	border-color: #800;
+	border-color: #600;
 }
 
 
