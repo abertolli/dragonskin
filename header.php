@@ -19,7 +19,6 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_get_archives('type=monthly&format=link'); ?>
-	<?php //comments_popup_script(); // off by default ?>
 	<?php wp_head(); ?>
 </head>
 <body>

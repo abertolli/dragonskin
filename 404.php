@@ -8,14 +8,12 @@
 
 <h1>Page Not Found</h1>
 
-<p>Maybe you were looking for one of these?</p>
-            <p>&nbsp;</p>
-<div class="postspace2">
-	</div>			
+<div class="postspace2"> </div>			
 
 <?php
 
 if(function_exists("smart404_has_suggestions") && smart404_has_suggestions()) {
+	echo "<p>Maybe you were looking for one of these?</p>";
 	smart404_loop();
 	while (have_posts()) : the_post();
 	?>
@@ -23,43 +21,6 @@ if(function_exists("smart404_has_suggestions") && smart404_has_suggestions()) {
         <?php
 		the_excerpt();
 	endwhile;
-} else {
-
-?>
-
-<h3> Pages </h3>
-      <ul>
-         <?php wp_list_pages('title_li=&depth=1'); ?>
-      </ul>
-
-<h3> Topics </h3>
-      <ul>
-         <?php wp_list_cats('sort_column=name'); ?>
-      </ul>
-
-<!--
-<h3> Authors </h3>
-      <ul>
-         <?php wp_list_authors(); ?>
-      </ul>
-
-<h3> Recent Articles </h3>
-      <ul>
-         <?php get_archives('postbypost', 4); ?>
-      </ul>
-
-<h3> Site Tools </h3>
-
-      <ul>
-         <?php wp_register(); ?>
-         <li><?php wp_loginout(); ?></li>
-         <?php wp_meta(); ?>
-      </ul>
--->
-
-
-<?php
-
 }
 
 ?>
