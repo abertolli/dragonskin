@@ -5,56 +5,57 @@
 
 <div id="content">
 
-<?php 
-if(isset($_GET['author_name'])) :
-	$curauth = get_userdatabylogin($author_name);
-else :
-	$curauth = get_userdata(intval($author));
-endif;
-?>
-
 <div class="author">
-<h2></h2>
+<h2><!-- Author Profile --></h2>
 
 <div class="boxed">
-<h3><?php echo $curauth->display_name; ?></h3>
+<h3><?php the_author_meta('display_name',$author); ?></h3>
 
-<?php if (trim($curauth->description)) { ?>
-   <p><?php echo $curauth->description; ?></p>
+<?php if (trim(get_the_author_meta('description',$author))) { ?>
+   <p><?php the_author_meta('description',$author); ?></p>
 <?php } else { ?>
-   <p><?php echo $curauth->display_name; ?> is an author at <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>.</p>
+   <p><?php echo the_author_meta('display_name',$author); ?> is an author at <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>.</p>
 <?php } ?>
 
 <ul>
-<?php if (trim(str_replace("http://","",$curauth->user_url))) { ?>
-   <li><span>Website:</span>  <a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a></li>
+<?php
+$url = trim(get_the_author_meta('user_url',$author));
+if (str_replace("http://","",$url)) { ?>
+   <li><span>Website:</span>  <a href="<?php echo $url; ?>"><?php echo $url; ?></a></li>
 <?php } ?>
 
-<?php if (trim($curauth->aim)) { ?>
-   <li><span>AIM:</span> <a href="aim:<?php echo $curauth->aim; ?>" alt="aim" title="AIM"><?php echo $curauth->aim; ?></a></li>
+<?php
+$aim = trim(get_the_author_meta('aim',$author));
+if ($aim) { ?>
+   <li><span>AIM:</span> <a href="aim:<?php echo $aim; ?>" alt="aim" title="AIM"><?php echo $aim; ?></a></li>
 <?php } ?>
 
-<?php if (trim($curauth->yim)) { ?>
-   <li><span>Yahoo:</span> <a href="ymsgr:<?php echo $curauth->yim; ?>" alt="yahoo" title="Yahoo"><?php echo $curauth->yim; ?></a></li>
+<?php
+$yim = trim(get_the_author_meta('yim',$author));
+if ($yim) { ?>
+   <li><span>Yahoo:</span> <a href="ymsgr:<?php echo $yim; ?>" alt="yahoo" title="Yahoo"><?php echo $yim; ?></a></li>
 <?php } ?>
 
-<?php if (trim(strpos($curauth->jabber,"@gmail.com"))) { 
+<?php
+$jabber = trim(get_the_author_meta('jabber',$author));
+if (trim(strpos($jabber,"@gmail.com"))) { 
    // Not sure if gtalk: requires @gmail.com, err on the side against spam
-   $gtalk = trim(str_replace("@gmail.com","",$curauth->jabber)); ?>
+   $gtalk = trim(str_replace("@gmail.com","",$jabber)); ?>
    <li><span>Google:</span> <a href="gtalk:chat?jid=<?php echo $gtalk; ?>" alt="google" title="Google"><?php echo $gtalk; ?></a></li>
-<?php } elseif (trim($curauth->jabber)) { ?>
-   <li><span>Jabber/Google Talk:</span> <a href="xmpp:<?php echo $curauth->jabber; ?>" alt="jabber" title="Jabber"><?php echo $curauth->jabber; ?></a></li>
+<?php } elseif (trim($jabber)) { ?>
+   <li><span>Jabber:</span> <a href="xmpp:<?php echo $jabber; ?>" alt="jabber" title="Jabber"><?php echo $jabber; ?></a></li>
 <?php } ?>
+
 </ul>
 </div>
 
 <div class="boxed">
-<h3>Articles by <?php echo $curauth->nickname; ?></h3>
+<h3>Articles by <?php the_author_meta('display_name',$author); ?></h3>
 <ul>
 <!-- The Loop -->
 
 <?php
-query_posts("author=$curauth->ID&posts_per_page=-1"); // This gets all posts by author
+query_posts("author=$author&posts_per_page=-1"); // This gets all posts by author
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
   <li>
@@ -82,7 +83,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 
 		<?php if (have_posts()) :
-			query_posts("author=$curauth->ID&posts_per_page=1");
+			query_posts("author=$author&posts_per_page=1");
 			$post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
                 <!--loop article begin-->
