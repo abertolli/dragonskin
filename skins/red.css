@@ -1,29 +1,31 @@
 /*
-Skin: Green
+Skin: Dragonskin Red
+Author: Angelo Bertolli
+Author URI: http://bitfreedom.com/
 */
 
 /* Background */
 body,
 #antipixel {
-	background-color: #060;
+	background-color: #600;
 }
 
 div .border {
-        background-color: #0f0;
+        background-color: #f00;
 }
 
 
 
 /* Links */
 a, a:visited {
-	color: #0c0;
+	color: #c00;
 }
 
 #content h1 a, #content h1 a:visited,
 #content h2 a, #content h2 a:visited,
 #content h3 a, #content h3 a:visited,
 #sidebar ul li a {
-	color: #0b0;
+	color: #b00;
 }
 
 
@@ -32,13 +34,13 @@ a, a:visited {
 #container,
 .boxed,
 hr {
-	border-color: #080;
+	border-color: #800;
 }
 
 
 /* Images */
 .wp-caption {
-   border-color: #080;
-   background-color: #040;
+   border-color: #800;
+   background-color: #400;
 }
 
