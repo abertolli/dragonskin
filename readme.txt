@@ -36,6 +36,9 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Versions ====
 
+== 2.2 ==
+  * Modifications to comply with WordPress standards
+
 == 2.1 ==
   * Updated deprecated functions
   * Added skin chooser
