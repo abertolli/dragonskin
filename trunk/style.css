@@ -4,7 +4,7 @@ Theme URI: http://bitfreedom.com/dragonskin
 Description: Wrap your blog in the skin of a dragon!  Dragonskin is a dark theme that features a CSS-drive drop-down menu, support for multiple authors, and fluid width for flexible resolution support.  Instructions on how to change the color scheme are found in readme.txt.
 Author: Angelo Bertolli
 Author URI: http://bitfreedom.com/
-Version: 2.0
+Version: 2.1
 Tags: dark, two-columns, flexible-width, custom-header, black, red, green
 
 The TXT/CSS/XHTML/HTML/PHP is distributed under the terms of
@@ -448,7 +448,7 @@ div.aligncenter {
    float: right;
 }
 
-.wp-caption {
+.wp-caption, .gallery-caption {
    color: #fff;
    border: 1px solid #800;
    text-align: center;
