@@ -112,3 +112,6 @@ Foundation; version 2, details located in the text file 'LICENSE'
 
 Contact:  Angelo Bertolli <angelo.bertolli@gmail.com>
 
+==== Why This Software is Free ====
+http://www.gnu.org/philosophy/why-free.html
+
