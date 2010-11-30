@@ -1,55 +1,32 @@
-<?php get_header(); ?>
+<?php
+/**
+ * @package WordPress
+ * @subpackage Default_Theme
+ */
 
-<!--include sidebar-->
-<?php get_sidebar(); ?>
+get_header();
+get_sidebar();
 
-<div id="content">
-<!--single.php-->
+?>
 
-<!--loop-->			
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<div id="content" class="narrowcolumn" role="main">
 
-		<!--post title-->
-			<h1 id="post-<?php the_ID(); ?>"><a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h1>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<div class="post" id="post-<?php the_ID(); ?>">
+		<h2><?php the_title(); ?></h2>
+			<div class="entry">
+				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
-			<?php edit_post_link("Edit this page", "<div align=\"right\"", "</div>"); ?>
+				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
-	<div class="postspace2">
-	</div>			
-                       <!--for paginate posts-->
-			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
-
-<!--content with more link-->
-			<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+			</div>
+		</div>
+		<?php endwhile; endif; ?>
+	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	
-                       <!--for paginate posts-->
-			<?php wp_link_pages('before=<p align="right"><strong>Pages:</strong> &after= </p>'); ?>
-
-<p class="author">Last modified on <?php the_modified_time('F j, Y'); ?></p>
-
-<!-- Post Meta
-<?php the_meta(); ?>
--->
-
-<div class="postspace">
+	<?php comments_template(); ?>
+	
 	</div>
-                                <!--all options over and out-->
 
 
-        <!--include comments template-->
-        <?php comments_template(); ?>
-
-<!--do not delete-->
-<?php endwhile; else: ?>
-	
-Sorry, no posts matched your criteria.
-
-<!--do not delete-->
-<?php endif; ?>
-	
-<!--single.php end-->
-</div>
-
-
-<!--include footer-->
 <?php get_footer(); ?>
