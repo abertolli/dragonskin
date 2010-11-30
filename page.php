@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!--include sidebar-->
-<?php include(TEMPLATEPATH."/sidebar.php"); ?>
+<?php get_sidebar(); ?>
 
 <div id="content">
 <!--single.php-->

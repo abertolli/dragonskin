@@ -61,7 +61,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 } // End - check for navbar.php
 ?>
 
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<?php get_search_form(); ?>
 <br />
 
 </div>
