@@ -1,9 +1,8 @@
 <?php get_header(); ?>
+<?php get_sidebar(); ?>
 
 <!--create your own error 404 page-->
 <!--include sidebar-->
-<?php include(TEMPLATEPATH."/sidebar.php"); ?>
-
 <div id="content">
 
 <h1>Page Not Found</h1>

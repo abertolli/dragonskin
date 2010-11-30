@@ -5,6 +5,7 @@
  */
 
 get_header();
+get_sidebar();
 ?>
 
 	<div id="content" class="widecolumn" role="main">
