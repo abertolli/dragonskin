@@ -9,9 +9,6 @@
 
 	<style type="text/css" media="screen">
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
-	<?php if (is_readable(get_stylesheet_directory()."/skincolor.css")) { ?>
-	@import url( <?php echo get_bloginfo('stylesheet_directory')."/skincolor.css"; ?> );
-	<?php } ?>
 	</style>
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
