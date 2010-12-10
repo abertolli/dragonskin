@@ -2,14 +2,13 @@
 Theme Name: Dragonskin
 Theme URI: http://bitfreedom.com/dragonskin
 Description: Wrap your blog in the skin of a dragon!  Dragonskin is a dark theme that features a CSS-drive drop-down menu, support for multiple authors, and fluid width for flexible resolution support.  Instructions on how to change the color scheme are found in readme.txt.
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Author: Angelo Bertolli
 Author URI: http://bitfreedom.com/
-Version: 2.2
+Version: 2.3
 Tags: dark, two-columns, flexible-width, custom-header, black, red, green
 
-The TXT/CSS/XHTML/HTML/PHP is distributed under the terms of
-the GPL license.  Please see the readme.txt file for information
-on features and redistribution.
 */
 
 body {
@@ -479,3 +478,19 @@ div.aligncenter {
    text-align: center;
    border: none;
 }
+
+.sticky a {
+/*
+	border: 2px solid #444;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 5px;
+*/
+	border-bottom: 2px solid #888;
+	border-top: 2px solid #888;
+}
+
+.bypostauthor {
+}
+

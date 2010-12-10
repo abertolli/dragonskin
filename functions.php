@@ -39,7 +39,7 @@ function theme_nav_fallback() {
 function theme_load_js() {
     if (is_admin()) return;
    	wp_enqueue_script('jquery');
-   	wp_enqueue_script('superfish', get_bloginfo('template_directory').'/includes/js/superfish.js', array( 'jquery' ) );
+   	wp_enqueue_script('superfish', get_template_directory_uri().'/includes/js/superfish.js', array( 'jquery' ) );
 }
 add_action('init', 'theme_load_js');
 
@@ -203,7 +203,7 @@ function mytheme_wp_head() {
 		}
        
 ?>
-<link href="<?php bloginfo('template_directory'); ?>/<?php echo $theme; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php get_template_directory_uri(); ?>/<?php echo $theme; ?>" rel="stylesheet" type="text/css" />
 <?php  }
 }
 

@@ -13,8 +13,6 @@
 
 <?php if (trim(get_the_author_meta('description',$author))) { ?>
    <p><?php the_author_meta('description',$author); ?></p>
-<?php } else { ?>
-   <p><?php echo the_author_meta('display_name',$author); ?> is an author at <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>.</p>
 <?php } ?>
 
 <ul>
@@ -61,7 +59,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
   <li>
 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php echo strip_tags(get_the_excerpt()); ?>">
 <?php the_title(); ?></a> 
-(<?php the_time('d M Y'); ?> in <?php the_category(', ');?>)
+(<?php the_date(); ?> in <?php the_category(', ');?>)
   </li>
 
   <?php endwhile; else: ?>
@@ -94,7 +92,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 	</div>	
 				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
                                 <!--post time-->
-				<b><?php the_time('l, F jS, Y') ?></b>
+				<b><?php the_date(); ?></b>
 				
 			<!--optional excerpt or automatic excerpt of the post-->
 				<?php global $more; $more=1; the_content(); ?>

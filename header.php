@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 	<title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico">
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 
 	<style type="text/css" media="screen">
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
@@ -22,9 +22,9 @@
 <div align="center">
 <?php
 if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
-	<a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/header.gif" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
+	<a href="<?php echo home_url(); ?>/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header.gif" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
 <?php } else { ?>
-	<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
+	<h1><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
 	<p><?php bloginfo('description'); ?></p>
 <?php } ?>
 
