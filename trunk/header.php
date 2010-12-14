@@ -50,7 +50,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 //--><!]]></script>
 
 <br />
-<?php include(TEMPLATEPATH."/navbar.php"); ?>
+<?php get_template_part('navbar'); ?>
 <br />
 </td></tr></table>
 
