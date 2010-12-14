@@ -49,7 +49,7 @@
 
 		Not Found
 		Sorry, but you are looking for something that isn't here.
-		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+		<?php get_template_part('searchform'); ?>
         <!--do not delete-->
 	<?php endif; ?>
 
