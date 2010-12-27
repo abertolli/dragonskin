@@ -203,7 +203,7 @@ function mytheme_wp_head() {
 		}
        
 ?>
-<link href="<?php get_template_directory_uri(); ?>/<?php echo $theme; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo get_stylesheet_directory_uri()."/$theme"; ?>" rel="stylesheet" type="text/css" />
 <?php  }
 }
 
