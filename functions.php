@@ -34,7 +34,7 @@ function theme_nav_fallback() {
     wp_page_menu( 'show_home=1&menu_class=menu' );
 }
 
-
+/* What is this for?
 //Auto Load JS
 function theme_load_js() {
     if (is_admin()) return;
@@ -55,7 +55,7 @@ function load_dom_ready_js() {
 }
 
 add_action('wp_head', 'load_dom_ready_js');
-	
+*/	
 	
 	
 
