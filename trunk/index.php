@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!--include sidebar-->
-<?php get_sidebar;?>
+<?php get_sidebar();?>
 
 <?php // query_posts($query_string . '&orderby=modified&order=desc' ); ?>
 

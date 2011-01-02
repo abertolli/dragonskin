@@ -2,7 +2,7 @@
 <br />
 <div>
 <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
-<input type="text" value="<?php esc_html_e($s); ?>" name="s" id="s" alt="search" size="60" />
+<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" alt="search" size="60" />
 <input type="submit" id="searchsubmit" value="Search" />
 </form>
 
