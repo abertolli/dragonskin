@@ -2,56 +2,21 @@ http://themes.trac.wordpress.org/ticket/2266
 
 I'm still seeing the following issues that will need to be fixed:
 
-DEBUG NOTICES:
-
-    * Debug: Undefined variable: s on line 5 of /wp-content/themes/dragonskin/searchform.php
-    * Debug: Use of undefined constant get_sidebar - assumed 'get_sidebar' on line 4 of /wp-content/themes/dragonskin/index.php 
-
-THEME UNIT TESTS:
-
-    * On a multi-page post, there are no sub-navigation links in the homepage view
     * Floated images don't clear correctly
-    * No permalink is provided when the post title is absent 
-
-THEME FUNCTIONALITY:
-
-    * The skin chooser isn't working: I can use the drop-down menu to pick a different color, and I get the "changes saved" message on submitting, but nothing changes on the actual site. Same results on Firefox and Chrome, after refresh, etc.
-    * I see that you've added nav_menu support to the code, but choosing a menu doesn't actually change anything.
-    * For your header image, please use core custom header support rather than asking users to directly upload an image. 
-
-Overall: Not approved.
-
-Questions, comments, etc. in response to this review are both welcome and encouraged. You can respond in any of the following ways:
-
-    * Add a comment to this ticket.
-    * Email the theme-reviewers mailing list
-    * Join the #wordpress-themes channel on irc.freenode.net 
-
-comment:5 Changed 3 weeks ago by copperblade
-
-I think I need some clarification on the theme unit tests.
-
-    * Shouldn't WP automatically add the sub-navigation links for multi-page posts?
-    * What is the right behavior for floated images?
-    * Shouldn't WP's back-end be creating a permalink? 
-
-Oh, and about the header support. I want to use the WP header functionality, but it seems to operate a bit differently than what my theme does. The header image is supposed to just replace the site title with a graphical logo/title (e.g.  http://heroesonly.com/) instead of providing a header background like usual in wordpress. I hope there is a way to do this by maybe using a tranparent default header, and somehow making the text title invisible (display:none ?) when a custom header is present.
-
-If I can't do that, I'll probably need to take off the custom header ability, because a different background header doesn't seem to make much sense for this theme.
-comment:6 Changed 3 weeks ago by sabreuse
-
-Thanks for responding - here's a little more detail for you:
-
-   1. Page links are up to you to add - you already have them in your single.php, but not in index.php. You can add this immediately after the_content, before closing the div that contains the post content, and that should take care of things:
-
-      <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?> 
 
    2. I'm attaching a screenshot of what I'm currently seeing on your site when a floated image is the last thing on a page or post. Notice how the "edit page" link, comments box, etc. are kind of hanging out next to the image? What we want instead is for the image to be at the end of the page content, and then have all that other stuff come below, as if it were a new section (which it is). After the post content, but before the categories, tags, etc, add:
 
        <div style="clear:both;"></div>
 
+
+    * No permalink is provided when the post title is absent 
+
    3. The permalink is, again, not automatic - by default, the title provides a permalink to the post, but when someone posts without a title, you should provide some kind of fallback for readers. Many people do this by making the post date clickable, but others prefer something that explicitly says "permalink" or "link to this post" or something like that. The details are up to you. 
+
+THEME FUNCTIONALITY:
+
+    * I see that you've added nav_menu support to the code, but choosing a menu doesn't actually change anything.
+    * For your header image, please use core custom header support rather than asking users to directly upload an image. 
 
    4. The image header is your choice - there's no requirement to include custom header functionality at all, but there is a requirement to use core functionality if you allow a header to be uploaded. To be honest, the current system doesn't prevent anyone from uploading something that wouldn't fit the design anyway - and it does create issues for blog owners who can't upload directly. 
 
-Changed 3 weeks ago by sabreuse 
