@@ -219,7 +219,8 @@ blockquote {
 	height: 32px;
 	margin: 0px;
 	padding: 0px;
-	}
+	clear: left;
+}
 
 .postspace2 {
 	background: transparent;
@@ -493,4 +494,3 @@ div.aligncenter {
 
 .bypostauthor {
 }
-
