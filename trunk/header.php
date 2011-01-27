@@ -23,6 +23,8 @@
 <?php
 if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 	<a href="<?php echo home_url(); ?>/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header.gif" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
+<?php } elseif (get_header_image() != "") { ?>
+	<a href="<?php echo home_url(); ?>/"><img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
 <?php } else { ?>
 	<h1><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
 	<p><?php bloginfo('description'); ?></p>
