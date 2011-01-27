@@ -16,7 +16,6 @@ I'm still seeing the following issues that will need to be fixed:
 THEME FUNCTIONALITY:
 
     * I see that you've added nav_menu support to the code, but choosing a menu doesn't actually change anything.
-    * For your header image, please use core custom header support rather than asking users to directly upload an image. 
 
-   4. The image header is your choice - there's no requirement to include custom header functionality at all, but there is a requirement to use core functionality if you allow a header to be uploaded. To be honest, the current system doesn't prevent anyone from uploading something that wouldn't fit the design anyway - and it does create issues for blog owners who can't upload directly. 
 
+- Look at old (1.3/1.5) version for permalinks "Posted by" and "last modified"
