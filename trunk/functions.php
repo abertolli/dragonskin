@@ -236,18 +236,14 @@ function header_style() {
 function admin_header_style() {
 ?>
 <style type="text/css">
-	<?php if (get_header_image() == "") { ?>
 	#headimg, #headimg h1 a {
 		text-align: center;
+	}
+	#headimg h1 a, #headimg #desc {
 		font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
 		text-decoration: none;
-		background: #444;
-	}
-	<?php } else { ?>
-	#headimg h1 a, #headimg #desc {
 		display: none;
 	}
-	<?php } ?>
     </style>
 <?php
 }
