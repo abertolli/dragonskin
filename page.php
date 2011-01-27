@@ -16,9 +16,7 @@ get_sidebar();
 		<h2>
 		<?php
 		if (trim(get_the_title()) == "") {
-		?>
-			<a href="<?php the_permalink(); ?>"><?php the_date(); ?></a>
-		<?php
+			the_date();
 		} else {
 			the_title();
 		}

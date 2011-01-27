@@ -218,14 +218,16 @@ add_action('admin_menu', 'mytheme_add_admin');
 
 define('HEADER_TEXTCOLOR', 'ccc');
 define('HEADER_IMAGE', '');
-define('HEADER_IMAGE_WIDTH', 750);
-define('HEADER_IMAGE_HEIGHT', 200);
+define('HEADER_IMAGE_WIDTH', 640);
+define('HEADER_IMAGE_HEIGHT', 120);
 
 // gets included in the site header
 function header_style() {
     ?><style type="text/css">
         #header {
+	/*
             background: url(<?php header_image(); ?>);
+	*/
         }
     </style><?php
 }
