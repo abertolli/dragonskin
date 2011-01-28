@@ -7,8 +7,8 @@ http://heroesonly.com/.
 ==== Features ====
    * Author profile pages that feature the authors as well as their posts.
    * Navigation bar with drop-down menus
-   * Supports an optional header image to replace the text title: include an image images/header.gif
    * Support for multiple colors
+   * Header image support for site logos
 
 === Integrated Support for plugins ===
    * Random Redirect (http://wordpress.org/extend/plugins/random-redirect/)
@@ -101,7 +101,7 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 ==== License ====
 Dragonskin (WordPress Theme)
-Copyright (C) 2008,2009,2010 - Angelo Bertolli
+Copyright (C) 2008,2009,2010,2011 - Angelo Bertolli
 
 The TXT/CSS/XHTML/HTML/PHP is distributed under the terms of the GPL
 license. You can redistribute it and/or modify it under the terms of
@@ -112,9 +112,3 @@ Foundation; version 2, details located in the text file 'LICENSE'
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU General Public License for more details.
-
-Contact:  Angelo Bertolli <angelo.bertolli@gmail.com>
-
-==== Why This Software is Free ====
-http://www.gnu.org/philosophy/why-free.html
-
