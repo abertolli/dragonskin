@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
 
 <!--create your own error 404 page-->
 <!--include sidebar-->
@@ -26,6 +25,6 @@ if(function_exists("smart404_has_suggestions") && smart404_has_suggestions()) {
 
 </div>
 
-<!--include footer-->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 

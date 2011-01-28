@@ -1,35 +1,28 @@
-<!-- begin navbar.php -->
+<?php if (is_dynamic_sidebar('top-menu')) : ?>
+
+<table><tr><td>
+<!-- Son of Suckerfish -->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+//--><!]]></script>
+<br />
 
 <ul id="nav">
-   <li><div class="menu"> Pages </div>
-      <ul>
-         <?php wp_list_pages('title_li=&depth=1'); ?>
-      </ul>
-   </li>
-
-   <li><div class="menu"> Topics </div>
-      <ul>
-         <?php wp_list_categories('orderby=name&title_li=0&hierarchical=0'); ?>
-      </ul>
-   </li>
-
-   <li><div class="menu"> Authors </div>
-      <ul>
-         <?php wp_list_authors(); ?>
-      </ul>
-   </li>
-   <li><div class="menu"> Recent Articles</div>
-      <ul>
-         <?php wp_get_archives('type=postbypost&limit=4'); ?>
-      </ul>
-   </li>
-   <li><div class="menu"> User </div>
-      <ul>
-         <?php wp_register(); ?>
-         <li><?php wp_loginout(); ?></li>
-         <?php wp_meta(); ?>
-      </ul>
-   </li>
+<?php dynamic_sidebar('top-menu'); ?>
 </ul>
 
-<!-- end navbar.php -->
+<br />
+</td></tr></table>
+
+<?php endif; ?>

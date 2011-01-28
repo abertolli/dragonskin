@@ -32,37 +32,10 @@ if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 	<p><?php bloginfo('description'); ?></p>
 <?php } ?>
 
-<?php
-if (is_readable(get_stylesheet_directory()."/navbar.php")) { // Begin - check for navbar.php
-?>
-
-<!-- Son of Suckerfish -->
-<table><tr><td>
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-sfHover = function() {
-	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=" sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-		}
-	}
-}
-if (window.attachEvent) window.attachEvent("onload", sfHover);
-//--><!]]></script>
-
-<br />
-<?php get_template_part('navbar'); ?>
-<br />
-</td></tr></table>
-
-<?php
-} // End - check for navbar.php
-?>
+<?php if (is_readable(get_stylesheet_directory()."/navbar.php")) get_template_part('navbar'); ?>
 
 <?php get_search_form(); ?>
+
 <br />
 
 </div>

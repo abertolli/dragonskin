@@ -91,14 +91,12 @@ div .border {
 }
 
 #content {
+	display: inline-block;
+	vertical-align: top;
 	background: transparent;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 1%;
-	margin-right: 28%;
-	position: relative;
-	padding: 5px;
-	}
+	width: 72%;
+	padding: 10px;
+}
 	
 #content p img{
 	border: none;
@@ -219,7 +217,7 @@ blockquote {
 	height: 32px;
 	margin: 0px;
 	padding: 0px;
-	clear: left;
+	clear: both;
 }
 
 .postspace2 {
@@ -228,7 +226,8 @@ blockquote {
 	height: 0px;
 	margin: 0px;
 	padding: 0px;
-	}
+	clear: both;
+}
 
 .postspace3 {
 /*
@@ -241,16 +240,16 @@ blockquote {
 	}
 
 #sidebar {
+	display: inline-block;
+	vertical-align: top;
 	color: #888;
 	background: #000;
 	width: 25%;
-	float: right; 
-	position: relative;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	padding: 10px 5px 3px 10px;
-   z-index: 20;
-	}
+	padding: 10px;
+	z-index: 20;
+}
 
 #sidebar p{
 	margin: 0px;
@@ -428,11 +427,6 @@ input, option, textarea {
    font-weight: bold;
 }
 
-div.clear_content {
-   clear: both;
-   float: none;
-}
-
 .aligncenter,
 div.aligncenter {
    display: block;
@@ -493,4 +487,8 @@ div.aligncenter {
 }
 
 .bypostauthor {
+}
+
+.postfooter {
+	clear: both;
 }

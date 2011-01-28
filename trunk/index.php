@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!--include sidebar-->
-<?php get_sidebar();?>
 
 <?php // query_posts($query_string . '&orderby=modified&order=desc' ); ?>
 
@@ -26,18 +24,17 @@
 			}
 			?>
 			</h2>
-
-	<?php edit_post_link("Edit this post", "<div align=\"right\">", "</div>"); ?>
-
-	<?php if(function_exists("coauthors")) {
-		// Support for coauthors plugin
+	<p class="author"> By
+	<?php
+	// Support for coauthors plugin
+	function_exists("coauthors") ?  coauthors() : the_author();
 	?>
-		<p class="author">By <?php coauthors(); ?> on <?php the_time('F j, Y'); ?> </p>
-	<?php } else { ?>
-		<p class="author">Posted by <?php the_author(); ?> on <?php the_time('F j, Y'); ?> </p>
-	<?php } ?>
-		<div class="postspace2">
-	</div>	
+	on <?php the_time('F j, Y'); ?>
+	<?php edit_post_link('Edit','<br /><small>','</small>'); ?>
+	</p>
+
+
+	<div class="postspace2"> </div>	
 				<!--post text with the read more link-->
 					<p> <?php the_content('See the rest of this entry...'); ?> </p>
 					<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
@@ -47,8 +44,7 @@
 				<b>Topics:</b> <?php the_category(', ') ?> |
 				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> </p>
 				</div>
-	<div class="postspace">
-	</div>
+	<div class="postspace"> </div>
 
 	        <!--end of one post-->
 		<?php endwhile; ?>
@@ -70,5 +66,5 @@
 </div>
 	
 
-<!--include footer-->
+<?php get_sidebar();?>
 <?php get_footer(); ?>
