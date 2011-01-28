@@ -35,30 +35,6 @@ function theme_nav_fallback() {
     wp_page_menu( 'show_home=1&menu_class=menu' );
 }
 
-/* What is this for?
-//Auto Load JS
-function theme_load_js() {
-    if (is_admin()) return;
-   	wp_enqueue_script('jquery');
-   	wp_enqueue_script('superfish', get_template_directory_uri().'/includes/js/superfish.js', array( 'jquery' ) );
-}
-add_action('init', 'theme_load_js');
-
-function load_dom_ready_js() {
-	$doc_ready_script="";
-	$doc_ready_script .= '
-	<script type="text/javascript">
-		jQuery(document).ready(function(){ 
-        	jQuery("div.menu ul").superfish(); 
-    	}); 
-	</script>';
-	echo $doc_ready_script;
-}
-
-add_action('wp_head', 'load_dom_ready_js');
-*/	
-	
-	
 
 // Custom Theme Options
 
