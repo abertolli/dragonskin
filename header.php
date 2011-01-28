@@ -5,7 +5,9 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 	<title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
+	<?php if (is_readable(get_stylesheet_directory()."/favicon.ico")) { ?>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+	<?php } ?>
 
 	<style type="text/css" media="screen">
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
@@ -31,7 +33,7 @@ if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 <?php } ?>
 
 <?php
-if (is_readable(TEMPLATEPATH."/navbar.php")) { // Begin - check for navbar.php
+if (is_readable(get_stylesheet_directory()."/navbar.php")) { // Begin - check for navbar.php
 ?>
 
 <!-- Son of Suckerfish -->
