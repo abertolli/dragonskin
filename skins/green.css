@@ -39,7 +39,7 @@ hr {
 
 
 /* Images */
-.wp-caption {
+.wp-caption, .gallery-caption {
    border-color: #080;
    background-color: #040;
 }

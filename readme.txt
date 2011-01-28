@@ -6,7 +6,7 @@ http://heroesonly.com/.
 
 ==== Features ====
    * Author profile pages that feature the authors as well as their posts.
-   * Navigation bar with drop-down menus
+   * Navigation bar with drop-down menus (via widgets)
    * Support for multiple colors
    * Header image support for site logos
 
@@ -34,6 +34,7 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 == 3.0 ==
   * Added WP standard image header support via admin interface
+  * Replaced navigation bar with widgets - please use this plugin for authors: http://wordpress.org/extend/plugins/list-authors/
   * Further updates for WP repository
 
 == 2.3 ==

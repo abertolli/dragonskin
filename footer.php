@@ -1,4 +1,3 @@
-<div class="clear_content"></div>
 <div class="border"></div>
 
 </div>

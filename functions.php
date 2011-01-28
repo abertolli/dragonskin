@@ -4,9 +4,20 @@ $content_width = 480;
 add_theme_support( 'automatic-feed-links' );
 
 
-if ( function_exists('register_sidebar') )
-    register_sidebar();	
-    
+if (function_exists('register_sidebar')) {
+	register_sidebar();
+	register_sidebar(array(
+		'id' => 'top-menu',
+		'name' => __('Top Menu', $text_domain),
+		'description' => __('Navigation bar with drop-down menus', $text_domain),
+		'before_widget' => '<li>',
+		'after_widget' => '</li>',
+		'before_title' => '<div class="menu">',
+		'after_title' => '</div>'
+	));
+}
+
+/*
 // Add WP 3.0 Menu Theme Support
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'nav-menus' );
@@ -34,7 +45,7 @@ function theme_nav() {
 function theme_nav_fallback() {
     wp_page_menu( 'show_home=1&menu_class=menu' );
 }
-
+*/
 
 // Custom Theme Options
 

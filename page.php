@@ -5,11 +5,10 @@
  */
 
 get_header();
-get_sidebar();
 
 ?>
 
-	<div id="content" class="narrowcolumn" role="main">
+	<div id="content" role="main">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -20,13 +19,14 @@ get_sidebar();
 			</a>
 			</h2>
 
-			<?php edit_post_link('Edit this entry','<p align="right"><small>','</small></p>'); ?>
+			<?php edit_post_link('Edit','<small>','</small>'); ?>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
+			</div>
 
+			<div class="postfooter">
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-
 			</div>
 		</div>
 		<?php endwhile; endif; ?>
@@ -37,5 +37,7 @@ get_sidebar();
 	
 	</div>
 
-
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();
+?>
