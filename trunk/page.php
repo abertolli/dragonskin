@@ -12,16 +12,16 @@ get_sidebar();
 	<div id="content" class="narrowcolumn" role="main">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="post" id="post-<?php the_ID(); ?>">
-		<h2>
-		<?php
-		if (trim(get_the_title()) == "") {
-			the_date();
-		} else {
-			the_title();
-		}
-		?>
-		</h2>
+
+		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<h2>
+			<a href="<?php the_permalink() ?>" rel="bookmark">
+			<?php trim(get_the_title()) == "" ? the_date():the_title(); ?>
+			</a>
+			</h2>
+
+			<?php edit_post_link('Edit this entry',' <small>','</small>'); ?>
+
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
@@ -33,9 +33,7 @@ get_sidebar();
 
 	<div class="postspace"></div>
 
-	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-	
-	<?php comments_template(); ?>
+	<?php if (comments_open()) comments_template(); ?>
 	
 	</div>
 
