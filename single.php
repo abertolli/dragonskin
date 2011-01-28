@@ -39,10 +39,10 @@ get_sidebar();
 				}
 			} // End coauthors test ?>
 			on <?php the_date();
-			edit_post_link('[Edit]',' <small>','</small>');
 			?>
 			</p>
 
+			<?php edit_post_link('Edit this entry',' <small>','</small>'); ?>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
