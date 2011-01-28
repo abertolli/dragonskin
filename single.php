@@ -42,7 +42,7 @@ get_sidebar();
 			?>
 			</p>
 
-			<?php edit_post_link('Edit this entry',' <small>','</small>'); ?>
+			<?php edit_post_link('Edit this entry','<p align="right"><small>','</small></p>'); ?>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
