@@ -15,9 +15,8 @@ http://heroesonly.com/.
    * Coauthors (http://wordpress.org/extend/plugins/co-authors/)
    * Smart 404 (http://wordpress.org/extend/plugins/smart-404/)
 
-=== How to Change Color ===
-The skins/ directory contains .css files.  Simply follow the example of one of
-these files.
+=== How to Add Skins ===
+Simply follow the example of one of others in the skins/ directory.
 
 ==== Feedback ====
 Please visit the theme URL to leave feedback including requests
@@ -25,9 +24,6 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Wishlist ====
    * Nested display for child pages and categories
-   * Threaded comments
-   * Paginate comments (http://codex.wordpress.org/Migrating_Plugins_and_Themes_to_2.7/Enhanced_Comment_Display)
-   * Custom header support through the admin panel
 
 ==== Image Credits ====
    * Bowie J. Poag
@@ -36,6 +32,13 @@ and patches.  http://bitfreedom.com/dragonskin/
 
 ==== Versions ====
 
+== 3.0 ==
+  * Added WP standard image header support via admin interface
+  * Further updates for WP repository
+
+== 2.3 ==
+  * Updates for WordPress 3.x and WP repository standards
+  
 == 2.2 ==
   * Modifications to comply with WordPress standards
 

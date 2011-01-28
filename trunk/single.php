@@ -19,13 +19,7 @@ get_sidebar();
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h2>
-			<?php
-			if (trim(get_the_title()) == "") {
-				the_date();
-			} else {
-				the_title();
-			}
-			?>
+			<?php (trim(get_the_title()) == "") ? $post_title = the_date():$post_title = the_title(); ?>
 			</h2>
 
 			<div class="entry">
