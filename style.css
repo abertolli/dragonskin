@@ -83,7 +83,7 @@ a:hover {
 }
 
 div .border {
-	background: #c00 url('images/border.png') top left repeat-x;
+	background: #c00 url('images/border.gif') top left repeat-x;
 	margin: 0;
 	padding: 0;
 	min-height: 12px;
