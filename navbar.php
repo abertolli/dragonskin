@@ -1,4 +1,4 @@
-<?php if (is_dynamic_sidebar('top-menu')) : ?>
+<?php if (is_dynamic_sidebar('top-menu') && is_active_sidebar('top-menu')): ?>
 
 <table><tr><td>
 <!-- Son of Suckerfish -->
