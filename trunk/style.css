@@ -493,3 +493,7 @@ div.aligncenter {
 .postfooter {
 	clear: both;
 }
+
+.comment-form-comment label{
+	display: none;
+}
