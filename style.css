@@ -12,7 +12,7 @@ Tags: dark, two-columns, flexible-width, custom-header, black, red, green
 */
 
 body {
-	background: #600 url('images/dragonskin-texture.png');
+	background: #600 url('images/dragonskin.png');
 	color: #bbb;
 	font-size: 10pt;
 	font-family: Verdana, Helvetica, Arial, Sans-Serif;
@@ -83,7 +83,7 @@ a:hover {
 }
 
 div .border {
-        background: #c00 url('images/border-texture.png') top left repeat-x;
+	background: #c00 url('images/border.png') top left repeat-x;
 	margin: 0;
 	padding: 0;
 	min-height: 12px;
