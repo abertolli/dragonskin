@@ -5,13 +5,16 @@ Author URI: http://bitfreedom.com/
 */
 
 /* Background */
-body,
+body {
+	background: #a80 url('images/dragonskin-gold.png');
+}
+
 #antipixel {
 	background-color: #a80;
 }
 
 div .border {
-        background-color: #fc4;
+	background: #fc4 url('images/border-gold.gif') top left repeat-x;
 }
 
 
