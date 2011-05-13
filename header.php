@@ -4,7 +4,8 @@
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-	<title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
+	<title> <?php wp_title('@',true,'right'); ?> <?php bloginfo('name'); ?>
+	</title>
 	<?php if (is_readable(get_stylesheet_directory()."/favicon.ico")) { ?>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<?php } ?>
