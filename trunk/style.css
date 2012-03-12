@@ -12,10 +12,10 @@ Tags: dark, two-columns, flexible-width, custom-header, black, red, green
 */
 
 body {
-	background: #600 url('images/dragonskin.png');
+	background: #000 url('images/dragonskin.png');
 	color: #bbb;
-	font-size: 10pt;
-	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 100%;
+	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
 	z-index: 0;
 }
 
@@ -34,38 +34,31 @@ a:hover {
 	background: transparent;
 	margin-left: 1%;
 	margin-right: 1%;
+	font-size: 120%;
 }
 
 #header h1 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: bold;
-	font-size: 40pt;
+	color: #ccc;
+	text-shadow: 2px 5px 5px #000;
+	font-size: 3.0em;
 	margin: 0px;
 }
 
 #header h1 a, #header h1 a:hover {
         color: #ccc;
+	text-shadow: 2px 5px 5px #000;
         text-decoration: none;
 }
         
 #header h2 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
+	color: #ccc;
+	text-shadow: 2px 3px 3px #000;
 	margin: 0px;
 }
 
 #header h2 a:hover {
 	color: #fff;
 	text-decoration: none;
-}
-
-#header h3 {
-	color: #aaa;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
-	margin: 0px;
 }
 
 #container, #footer { /* width of main area */
@@ -97,6 +90,7 @@ div .border {
 	background: transparent;
 	width: 70%;
 	padding: 10px;
+	font-size: 120%;
 }
 	
 #content p img{
@@ -104,17 +98,15 @@ div .border {
 	}
 
 #content h1 {
-	color: #aaa;
-	font-size: 24pt;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
+	color: #ccc;
+	text-shadow: 2px 3px 3px #000;
 	padding: 10px 10px 10px 10px;
 	line-height: 150%;
 	margin: 0px;
 	}
 	
 #content h1 a, #content h1 a:visited {
-	color: #b00;
+	color: #ccc;
 	text-decoration: none;
 	}
 
@@ -124,14 +116,12 @@ div .border {
 	}
 
 #content h2 {
-	color: #aaa;
-        font-size: 20pt;
-	font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: normal;
+	color: #ccc;
+	text-shadow: 2px 3px 3px #a00;
 	}
 
 #content h2 a, #content h2 a:visited {
-	color: #b00;
+	color: #ccc;
 	text-decoration: none;
 	}
 
@@ -142,23 +132,20 @@ div .border {
 	}
 
 #content h3 {
-	color: #aaa;
-	font-size: 16pt;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-	font-weight: bold;
+	color: #ccc;
+	text-shadow: 1px 2px 2px #a00;
 	line-height: 120%;
 	margin-bottom: 0px;
 	}
 
 #content h3 a, #content h3 a:visited  {
-	color: #b00;
+	color: #ccc;
 	text-decoration: none;
 	}
 
 #content h3 a:hover {
 	color: #fff;
 	text-decoration: none;
-	font-weight: normal;
 	}
 
 #content ol {
@@ -259,17 +246,14 @@ blockquote {
 	}
 
 #sidebar h2 {
-	color: #aaa;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
-        font-size: 14pt;
-	font-weight: normal;
+	color: #ccc;
+	text-shadow: 1px 2px 2px #a00;
 	list-style: none;
 	padding: 10px 0px 10px 0px;
 	margin: 0px;
-	}
+}
 
 #sidebar h3 {
-	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
 }
 
 #sidebar ul {
@@ -316,16 +300,14 @@ hr {
 }
 
 .author {
-   color: #888;
-   font-size: 9pt;
 }
 
 input, option, textarea {
-   background:                #ccc;
-   color:                     #000;
-   border:                    1px solid #000;
-   font-family:               Arial, sans-serif;
-   font-size:                 8pt;
+	background:	#ccc;
+	color:		#000;
+	border:		1px solid #000;
+	font-family:	Garamond, 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif;
+	font-size:	0.8em;
 }
 
 #nav, #nav ul { /* all lists */
@@ -374,7 +356,7 @@ input, option, textarea {
 }
 
 #nav li h2, #nav li h3 {
-   text-align: center;
+	text-align: center;
 }
 
 #nav li ul { /* second-level lists */
@@ -390,8 +372,10 @@ input, option, textarea {
 }
 
 .menu {
-   font-weight: bold;
-   text-align: center;
+/* 	font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, 'MS Serif', Serif; */
+	text-align: center;
+	text-shadow: 2px 2px 2px #000;
+	text-decoration: underline;
 }
 
 .credit, .credit a {
@@ -425,7 +409,6 @@ input, option, textarea {
 
 .boxed span {
    color: #ccc;
-   font-weight: bold;
 }
 
 .aligncenter,
@@ -464,7 +447,7 @@ div.aligncenter {
 }
 
 .wp-caption p.wp-caption-text {
-   font-size: 11px;
+   font-size: 1.1em;
    line-height: 17px;
    padding: 0 4px 5px;
    margin: 0;
