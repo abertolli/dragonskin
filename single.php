@@ -39,7 +39,6 @@ get_header();
 			} // End coauthors test ?>
 			on <?php the_date();
 			?>
-			<?php edit_post_link('Edit','<br /><small>','</small>'); ?>
 			</p>
 
 

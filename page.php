@@ -19,8 +19,6 @@ get_header();
 			</a>
 			</h2>
 
-			<?php edit_post_link('Edit','<small>','</small>'); ?>
-
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 			</div>

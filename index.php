@@ -30,7 +30,6 @@
 	function_exists("coauthors") ?  coauthors() : the_author();
 	?>
 	on <?php the_time('F j, Y'); ?>
-	<?php edit_post_link('Edit','<br /><small>','</small>'); ?>
 	</p>
 
 
