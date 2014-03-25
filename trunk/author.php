@@ -78,37 +78,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 
-		<?php if (have_posts()) :
-			query_posts("author=$author&posts_per_page=1");
-			$post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-
-                <!--loop article begin-->
-
-		<?php while (have_posts()) : the_post(); ?>
-		                <!--post title as a link-->
-<div class="postspace3">
-	</div>	
-				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-                                <!--post time-->
-				<b><?php the_date(); ?></b>
-				
-			<!--optional excerpt or automatic excerpt of the post-->
-				<?php global $more; $more=1; the_content(); ?>
-			
-	       <!--one post end-->
-		<?php endwhile; ?>
-                
-               <!-- navigation-->
-		<p>
-		<?php previous_posts_link('&laquo; Previous') ?>
-		<?php next_posts_link('Next &raquo;') ?>
-		</p>
-
-
-   <?php else : ?>
-      <p>No posts by this author</p>
-   <?php endif; ?>
-
 </div>
 
 <?php get_sidebar(); ?>
