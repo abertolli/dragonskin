@@ -235,6 +235,6 @@ function admin_header_style() {
 <?php
 }
 
-add_custom_image_header('header_style', 'admin_header_style');
+add_theme_support('custom-header',$args);
 
 ?>
