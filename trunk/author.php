@@ -4,7 +4,7 @@
 <div id="content">
 
 <div class="author">
-<h2><!-- Author Profile --></h2>
+<h1><!-- Author Profile --></h1>
 
 <div class="boxed">
 <h3><?php the_author_meta('display_name',$author); ?></h3>

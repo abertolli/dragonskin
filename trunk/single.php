@@ -17,11 +17,11 @@ get_header();
 		</div>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<h2>
+			<h1>
 			<a href="<?php the_permalink() ?>" rel="bookmark">
 			<?php trim(get_the_title()) == "" ? the_date():the_title(); ?>
 			</a>
-			</h2>
+			</h1>
 
 			<p class="author"> By
 			<?php

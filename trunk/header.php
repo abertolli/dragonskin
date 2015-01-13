@@ -4,7 +4,7 @@
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-	<title> <?php wp_title('@',true,'right'); ?> <?php bloginfo('name'); ?>
+	<title> <?php wp_title('-',true,'right'); ?> <?php bloginfo('name'); ?>
 	</title>
 	<?php if (is_readable(get_stylesheet_directory()."/favicon.ico")) { ?>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
@@ -29,7 +29,7 @@ if (is_readable(get_stylesheet_directory()."/images/header.gif")) { ?>
 <?php } elseif (get_header_image() != "") { ?>
 	<a href="<?php echo home_url(); ?>/"><img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" border="0" /></a>
 <?php } else { ?>
-	<h1><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
+	<div id="title"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></div>
 	<p><?php bloginfo('description'); ?></p>
 <?php } ?>
 
