@@ -3,11 +3,7 @@
 
 <div id="content">
 
-<div class="author">
-<h1><!-- Author Profile --></h1>
-
-<div class="boxed">
-<h3><?php the_author_meta('display_name',$author); ?></h3>
+<h1><?php the_author_meta('display_name',$author); ?></h1>
 
 <?php if (trim(get_the_author_meta('description',$author))) { ?>
    <p><?php the_author_meta('description',$author); ?></p>
@@ -43,10 +39,10 @@ if (trim(strpos($jabber,"@gmail.com"))) {
 <?php } ?>
 
 </ul>
-</div>
 
 <div class="boxed">
-<h3>Articles by <?php the_author_meta('display_name',$author); ?></h3>
+<h2>Articles</h2>
+<br />
 <ul>
 <!-- The Loop -->
 
@@ -74,9 +70,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 		</p>
 
 </div>
-
-</div>
-
 
 </div>
 
