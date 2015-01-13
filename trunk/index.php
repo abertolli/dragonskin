@@ -24,7 +24,7 @@
 			}
 			?>
 			</h2>
-	<p class="author"> By
+	<p> By
 	<?php
 	// Support for coauthors plugin
 	function_exists("coauthors") ?  coauthors() : the_author();
