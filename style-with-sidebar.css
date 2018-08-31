@@ -93,7 +93,7 @@ div .border {
 	float: left;
 	position: relative;
 	background: transparent;
-	width: 97%;
+	width: 70%;
 	padding: 10px;
 	font-size: 120%;
 }
@@ -235,12 +235,11 @@ blockquote {
 	position: relative;
 	color: #888;
 	background: #000;
-	width: 0%;
+	width: 24%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 10px;
 	z-index: 20;
-	display: none;
 }
 
 #sidebar p{

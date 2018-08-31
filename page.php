@@ -13,11 +13,9 @@ get_header();
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<h1>
-			<a href="<?php the_permalink() ?>" rel="bookmark">
-			<?php trim(get_the_title()) == "" ? the_date():the_title(); ?>
-			</a>
-			</h1>
+		<?php if (trim(get_the_title() != "" )) { ?>
+		<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<?php } ?>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
