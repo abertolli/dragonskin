@@ -1,8 +1,7 @@
 # Dragonskin WordPress Theme
-This theme is two-column, fluid (width), with other features (below).
+Two-column, fluid (width) WordPress theme with other features (below).  Originally developed for [Heroes Only](http://heroes.mystara.net)
 
-I originally developed this theme to go along with my D&D fan site at
-http://heroesonly.com/.
+[Download Latest Release](https://drive.google.com/drive/folders/0B6Q806w7I7EHTTJNUmFSQnI4emM?usp=sharing)
 
 ## Features
    * Author profile pages that feature the authors as well as their posts.
@@ -11,24 +10,17 @@ http://heroesonly.com/.
    * Header image support for site logos
 
 ## Integrated Support for plugins
-   * Random Redirect (http://wordpress.org/extend/plugins/random-redirect/)
-   * Coauthors (http://wordpress.org/extend/plugins/co-authors/)
-   * Smart 404 (http://wordpress.org/extend/plugins/smart-404/)
+   * [Random Redirect](http://wordpress.org/extend/plugins/random-redirect/)
+   * [Coauthors](http://wordpress.org/extend/plugins/co-authors/)
+   * [Smart 404](http://wordpress.org/extend/plugins/smart-404/)
 
 ## How to Add Skins
 Simply follow the example of one of others in the skins/ directory.
 
-## Feedback
-Please visit the theme URL to leave feedback including requests
-and patches.  http://bitfreedom.com/dragonskin/
-
-## Wishlist
-   * Nested display for child pages and categories
-
 ## Image Credits
    * Bowie J. Poag
-   * Brilliant Button Maker (http://www.lucazappa.com/brilliantMaker/buttonImage.php)
-   * Arcsin Website Templates - for the border image (http://templates.arcsin.se/the-hobbit-website-template/)
+   * [Brilliant Button Maker](http://www.lucazappa.com/brilliantMaker/buttonImage.php)
+   * [Arcsin Website Templates](http://templates.arcsin.se/the-hobbit-website-template/) - for the border image
 
 ## Versions
 
